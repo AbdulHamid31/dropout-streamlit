@@ -39,3 +39,13 @@ shap_values = explainer(X)
 
 shap.plots.waterfall(shap_values[0])
 st.pyplot(plt.gcf())
+
+# Hitung statistik dropout
+jumlah_mahasiswa = len(data)
+jumlah_dropout = data['dropout'].sum()
+persentase_dropout = (jumlah_dropout / jumlah_mahasiswa) * 100
+
+# Tampilkan di halaman utama
+st.markdown(f"### 📊 Total Mahasiswa: {jumlah_mahasiswa}")
+st.markdown(f"### ❌ Jumlah Dropout: {jumlah_dropout} ({persentase_dropout:.1f}%)")
+
