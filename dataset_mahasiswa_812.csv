@@ -1,0 +1,813 @@
+ID Mahasiswa,Nama,total_login,materi_selesai,skor_kuis_rata2,partisipasi_forum,durasi_total_akses,status_akademik_terakhir,interaksi_mingguan,jumlah_tugas_dikumpulkan,frekuensi_kuis,aktivitas_mobile,dropout
+MHS0001,Hani Pudjiastuti,43,91,40.45,6,58.6,IPK < 2.5,33,6,3,30.3,0
+MHS0002,Arta Haryanto,33,51,80.93,1,93.4,IPK > 3.0,7,0,7,60.5,1
+MHS0003,"Wadi Hariyah, S.Ked",19,70,46.42,2,85.2,IPK > 3.0,19,14,5,12.0,0
+MHS0004,"Cut Latika Palastri, S.Sos",47,31,54.17,0,69.2,IPK < 2.5,23,0,7,67.7,0
+MHS0005,Cagak Hidayanto,12,30,40.92,7,18.2,IPK > 3.0,17,0,3,51.1,0
+MHS0006,Ghani Wasita,25,79,61.61,8,29.2,IPK < 2.5,25,7,6,58.5,0
+MHS0007,"Tgk. Ifa Salahudin, S.Pt",43,10,82.01,3,88.2,IPK 2.5–3.0,31,3,5,60.6,0
+MHS0008,dr. Teguh Kusumo,23,14,59.61,5,22.4,IPK 2.5–3.0,33,3,7,52.2,0
+MHS0009,Tasdik Saragih,27,21,48.97,8,31.5,IPK < 2.5,24,12,4,56.6,0
+MHS0010,"R. Yosef Pradana, S.Pd",15,99,77.68,5,17.3,IPK 2.5–3.0,29,1,7,64.7,0
+MHS0011,Azalea Wibowo,15,55,79.44,8,69.2,IPK 2.5–3.0,10,10,5,70.2,0
+MHS0012,"Elma Budiman, M.Farm",28,43,48.69,3,94.7,IPK < 2.5,6,10,2,68.2,0
+MHS0013,Edi Waskita,40,58,78.54,7,30.6,IPK 2.5–3.0,26,10,1,79.6,1
+MHS0014,Hafshah Prasetyo,44,87,87.36,8,50.2,IPK > 3.0,36,0,4,25.2,0
+MHS0015,Elma Pratama,28,99,48.32,3,65.3,IPK > 3.0,20,11,4,42.1,0
+MHS0016,"Ika Pranowo, S.Pt",7,54,78.55,4,99.9,IPK < 2.5,22,9,2,85.8,0
+MHS0017,Citra Mardhiyah,26,36,75.43,7,15.0,IPK 2.5–3.0,9,8,5,41.7,0
+MHS0018,"Ajiono Susanti, M.Kom.",6,82,63.68,9,52.4,IPK > 3.0,34,6,1,20.0,0
+MHS0019,"Vicky Dabukke, S.H.",28,35,42.9,5,41.6,IPK > 3.0,23,3,4,52.0,1
+MHS0020,Usyi Dabukke,48,56,43.73,6,87.3,IPK 2.5–3.0,27,11,1,18.8,1
+MHS0021,Hairyanto Sitorus,34,95,82.62,2,50.2,IPK 2.5–3.0,38,5,4,26.2,1
+MHS0022,Dian Wacana,42,65,89.51,6,15.5,IPK > 3.0,17,13,5,89.9,0
+MHS0023,"R.A. Lidya Susanti, S.E.",6,72,73.8,7,65.3,IPK > 3.0,33,1,6,53.3,0
+MHS0024,"dr. Paulin Marpaung, M.M.",25,57,62.3,9,78.2,IPK < 2.5,26,6,4,32.7,1
+MHS0025,Darmana Sihombing,37,70,72.38,5,5.3,IPK < 2.5,13,1,6,89.6,0
+MHS0026,Drs. Humaira Rahimah,16,90,69.72,9,86.6,IPK > 3.0,23,9,4,87.3,0
+MHS0027,Dinda Yolanda,26,35,59.18,8,22.7,IPK < 2.5,10,7,3,45.3,0
+MHS0028,Irma Suryatmi,48,45,43.28,5,57.4,IPK > 3.0,19,7,5,30.8,0
+MHS0029,Puti Nurul Natsir,29,10,81.08,8,44.5,IPK > 3.0,24,0,2,77.1,0
+MHS0030,Rina Uyainah,31,17,58.59,3,73.4,IPK < 2.5,13,12,6,67.2,0
+MHS0031,Ophelia Yuliarti,46,61,80.94,7,40.3,IPK < 2.5,36,7,2,65.0,0
+MHS0032,Ir. Maida Wahyuni,32,88,52.63,3,87.6,IPK 2.5–3.0,8,1,5,81.4,0
+MHS0033,Among Damanik,20,56,40.05,1,74.4,IPK 2.5–3.0,22,5,7,65.2,0
+MHS0034,Dr. Zahra Wibowo,19,65,47.95,9,66.5,IPK 2.5–3.0,9,12,2,32.7,0
+MHS0035,Muni Saragih,48,95,63.43,8,80.6,IPK > 3.0,24,0,5,65.5,0
+MHS0036,Dt. Rama Namaga,7,23,87.22,4,76.6,IPK < 2.5,27,4,2,34.5,0
+MHS0037,Bala Saragih,41,99,45.11,3,8.4,IPK > 3.0,15,10,6,70.7,0
+MHS0038,Rafi Lailasari,11,37,82.71,1,42.5,IPK < 2.5,26,6,3,59.6,0
+MHS0039,"Daniswara Permata, S.H.",25,96,66.35,0,93.4,IPK > 3.0,8,12,2,16.2,0
+MHS0040,Kasiyah Prasasta,13,87,81.3,6,16.9,IPK 2.5–3.0,33,9,6,51.0,0
+MHS0041,Gatot Adriansyah,43,97,54.92,5,75.0,IPK 2.5–3.0,38,0,4,37.5,0
+MHS0042,Karja Sinaga,22,11,82.0,1,97.6,IPK 2.5–3.0,17,14,5,36.3,0
+MHS0043,Titin Budiman,8,35,78.64,7,10.0,IPK > 3.0,13,1,1,58.2,0
+MHS0044,"H. Galar Irawan, M.Ak",29,23,51.5,3,69.8,IPK < 2.5,35,6,7,35.8,0
+MHS0045,Ilsa Hartati,18,68,46.57,7,49.5,IPK < 2.5,11,5,1,72.2,0
+MHS0046,T. Opan Novitasari,13,65,83.4,6,60.0,IPK 2.5–3.0,8,2,5,15.7,0
+MHS0047,Karman Tarihoran,30,16,88.16,4,13.1,IPK 2.5–3.0,23,13,3,62.8,0
+MHS0048,"H. Irnanto Manullang, S.Pt",6,12,41.57,9,9.1,IPK 2.5–3.0,34,9,2,74.7,0
+MHS0049,Restu Farida,24,32,76.56,9,68.4,IPK 2.5–3.0,35,1,3,63.8,0
+MHS0050,Hj. Kiandra Damanik,32,27,85.48,7,83.2,IPK < 2.5,39,9,1,49.8,0
+MHS0051,Putri Suryono,11,47,82.87,8,79.3,IPK > 3.0,25,3,7,86.0,0
+MHS0052,Drs. Elma Hastuti,48,24,88.23,4,56.7,IPK > 3.0,35,2,6,34.0,0
+MHS0053,Zalindra Hutasoit,12,73,78.0,9,14.5,IPK > 3.0,23,6,7,11.5,1
+MHS0054,Tina Hardiansyah,39,98,62.11,4,70.4,IPK > 3.0,35,7,5,44.6,0
+MHS0055,Mahmud Zulkarnain,18,37,55.6,1,28.0,IPK 2.5–3.0,36,1,5,12.6,0
+MHS0056,Oni Lailasari,21,83,56.04,4,91.6,IPK 2.5–3.0,6,9,3,86.3,0
+MHS0057,Cut Yuni Tampubolon,40,48,76.22,2,84.6,IPK 2.5–3.0,14,6,6,26.8,1
+MHS0058,Sutan Cayadi Mardhiyah,44,66,77.29,6,72.4,IPK > 3.0,6,7,3,73.1,0
+MHS0059,Maya Maryati,8,26,50.02,9,95.1,IPK 2.5–3.0,6,5,2,72.0,1
+MHS0060,Hardi Kurniawan,6,95,83.41,4,8.0,IPK 2.5–3.0,28,5,4,27.4,0
+MHS0061,Dirja Astuti,10,99,75.75,7,74.9,IPK < 2.5,21,9,6,59.7,0
+MHS0062,KH. Warsita Narpati,46,53,68.14,0,36.4,IPK < 2.5,36,0,4,13.8,0
+MHS0063,Dalimin Prasasta,8,34,63.58,2,91.1,IPK 2.5–3.0,20,3,7,48.7,0
+MHS0064,Hasan Nuraini,33,26,67.16,2,30.3,IPK < 2.5,20,13,2,11.2,0
+MHS0065,Rina Permadi,22,22,47.96,8,73.9,IPK < 2.5,35,0,4,83.7,0
+MHS0066,Latif Puspita,30,93,50.19,4,88.4,IPK 2.5–3.0,28,3,1,88.1,1
+MHS0067,Edi Saputra,48,34,44.56,8,9.0,IPK 2.5–3.0,5,1,7,27.8,0
+MHS0068,Winda Iswahyudi,38,77,47.68,8,42.8,IPK 2.5–3.0,15,10,4,26.6,0
+MHS0069,Gasti Melani,14,19,62.68,0,77.4,IPK 2.5–3.0,25,12,2,70.3,0
+MHS0070,"Ir. Jail Zulaika, M.Pd",40,76,66.52,1,48.2,IPK > 3.0,8,4,4,30.3,0
+MHS0071,Ir. Nova Mangunsong,18,27,40.89,4,30.4,IPK > 3.0,11,9,5,81.6,0
+MHS0072,Rafid Sihombing,35,95,79.84,3,25.9,IPK 2.5–3.0,30,13,3,55.9,1
+MHS0073,"T. Mujur Mandasari, S.I.Kom",19,43,54.71,9,17.5,IPK < 2.5,16,8,1,38.1,0
+MHS0074,Drs. Titi Budiman,12,17,85.59,8,86.4,IPK 2.5–3.0,35,10,5,76.6,0
+MHS0075,Dodo Tarihoran,18,49,88.38,6,59.7,IPK 2.5–3.0,21,14,5,49.5,0
+MHS0076,Pia Zulkarnain,27,92,49.27,5,12.3,IPK < 2.5,37,11,2,82.9,0
+MHS0077,Kenari Mansur,44,51,63.1,6,41.3,IPK > 3.0,15,9,3,84.2,0
+MHS0078,Zahra Firmansyah,25,50,40.06,0,39.9,IPK 2.5–3.0,32,2,3,23.2,0
+MHS0079,"Dalima Purnawati, S.IP",20,15,69.92,0,22.3,IPK 2.5–3.0,36,7,6,10.2,0
+MHS0080,"Drs. Warji Kuswoyo, M.M.",49,61,70.37,7,46.4,IPK > 3.0,5,2,7,88.7,0
+MHS0081,"Bella Mulyani, S.Ked",22,35,52.38,1,36.5,IPK > 3.0,32,5,1,82.5,1
+MHS0082,Elvina Riyanti,28,73,67.92,9,37.5,IPK < 2.5,11,3,7,14.4,1
+MHS0083,Nadine Mansur,30,68,51.28,8,75.2,IPK > 3.0,6,7,2,76.6,0
+MHS0084,Azalea Lazuardi,29,65,48.04,6,26.2,IPK > 3.0,28,10,1,46.6,0
+MHS0085,Clara Oktaviani,49,68,72.58,5,66.0,IPK > 3.0,8,5,6,30.7,0
+MHS0086,"drg. Lukita Budiman, S.E.I",45,79,56.3,0,59.2,IPK < 2.5,23,7,4,80.3,0
+MHS0087,Chelsea Widodo,33,42,69.51,0,59.0,IPK > 3.0,30,0,5,25.7,0
+MHS0088,Muhammad Lailasari,19,62,61.66,1,68.0,IPK > 3.0,15,5,1,85.8,0
+MHS0089,Emin Megantara,49,31,89.22,5,57.1,IPK < 2.5,15,0,7,26.4,0
+MHS0090,Citra Prasasta,5,30,47.48,5,88.5,IPK > 3.0,7,0,5,59.1,0
+MHS0091,Mariadi Marpaung,29,79,63.23,1,69.2,IPK > 3.0,16,7,2,27.8,0
+MHS0092,Intan Rahimah,11,79,74.02,0,57.0,IPK < 2.5,7,14,7,53.7,0
+MHS0093,"Dr. Adika Zulkarnain, S.E.I",13,13,59.78,9,83.8,IPK 2.5–3.0,31,6,4,64.7,0
+MHS0094,Tina Rahimah,28,84,88.73,4,62.6,IPK < 2.5,6,2,2,25.2,0
+MHS0095,drg. Cemani Mayasari,5,71,76.09,4,32.7,IPK > 3.0,20,5,4,51.7,0
+MHS0096,Dr. Uli Maheswara,48,71,72.85,1,24.7,IPK > 3.0,6,14,4,47.5,1
+MHS0097,Cut Nurul Hutagalung,12,33,77.85,5,19.5,IPK > 3.0,34,8,5,15.7,0
+MHS0098,R. Padma Padmasari,28,64,87.63,8,90.4,IPK < 2.5,24,6,2,75.5,0
+MHS0099,Marsudi Melani,15,18,85.39,1,72.5,IPK > 3.0,32,11,2,36.9,0
+MHS0100,Emas Pratama,21,12,76.21,9,94.1,IPK > 3.0,29,2,1,56.0,1
+MHS0101,Irma Lestari,12,40,77.46,1,62.3,IPK < 2.5,36,13,7,51.2,0
+MHS0102,Utama Permata,39,49,47.3,2,50.0,IPK 2.5–3.0,14,13,2,51.1,0
+MHS0103,"Tasnim Wasita, S.E.I",39,45,45.14,6,10.7,IPK 2.5–3.0,37,12,1,18.6,0
+MHS0104,Puti Gina Puspasari,37,33,68.55,5,68.8,IPK > 3.0,17,5,3,43.9,0
+MHS0105,drg. Ikin Budiman,9,15,40.92,7,60.3,IPK < 2.5,20,10,3,46.2,0
+MHS0106,Dt. Radit Pratiwi,46,75,64.12,7,99.1,IPK > 3.0,26,3,3,68.7,1
+MHS0107,"Ir. Kayun Situmorang, M.M.",43,93,50.52,5,27.7,IPK < 2.5,24,13,6,77.2,0
+MHS0108,Luhung Budiman,45,84,57.3,9,55.4,IPK < 2.5,31,12,2,53.6,0
+MHS0109,Drs. Ophelia Hutapea,32,13,78.79,2,66.8,IPK 2.5–3.0,20,2,6,16.9,0
+MHS0110,Vicky Hutapea,11,88,87.06,2,66.2,IPK 2.5–3.0,38,8,7,28.9,0
+MHS0111,Olga Hidayanto,13,15,43.62,0,58.3,IPK < 2.5,36,9,2,23.2,0
+MHS0112,Putri Sitorus,12,60,66.71,6,78.8,IPK > 3.0,30,1,1,20.0,0
+MHS0113,Drs. Suci Suryatmi,16,71,84.13,4,24.5,IPK 2.5–3.0,29,0,6,39.3,0
+MHS0114,Drs. Raden Utama,38,66,44.13,3,73.9,IPK > 3.0,6,14,6,28.4,0
+MHS0115,Ajiono Wahyudin,37,75,81.23,9,63.9,IPK 2.5–3.0,16,13,7,27.5,0
+MHS0116,Ciaobella Wulandari,27,88,57.89,3,90.1,IPK 2.5–3.0,13,1,6,14.4,0
+MHS0117,Cut Belinda Waskita,28,84,56.1,3,85.5,IPK > 3.0,16,6,4,11.4,0
+MHS0118,Radit Gunarto,41,17,88.87,5,34.9,IPK 2.5–3.0,30,9,1,18.2,0
+MHS0119,Queen Mansur,39,35,50.04,7,31.2,IPK 2.5–3.0,13,0,3,23.8,0
+MHS0120,Zaenab Wahyuni,48,60,74.66,7,98.3,IPK > 3.0,14,5,1,44.5,0
+MHS0121,Rachel Purwanti,44,54,81.07,4,55.1,IPK 2.5–3.0,36,13,4,50.8,0
+MHS0122,Drs. Wisnu Situmorang,26,53,42.06,5,91.1,IPK 2.5–3.0,38,6,7,21.2,0
+MHS0123,"Tgk. Darsirah Prasasta, S.Kom",31,14,73.52,3,20.6,IPK 2.5–3.0,24,8,7,44.0,1
+MHS0124,Nardi Maulana,39,79,87.58,8,66.1,IPK > 3.0,6,14,2,37.3,0
+MHS0125,"Kamal Suryatmi, M.Farm",5,35,46.21,7,81.9,IPK < 2.5,5,13,1,24.7,0
+MHS0126,"Dt. Harjaya Hasanah, S.I.Kom",39,77,84.81,9,95.0,IPK > 3.0,28,7,7,10.5,1
+MHS0127,Sidiq Pangestu,41,28,69.74,9,37.0,IPK < 2.5,31,5,6,47.4,0
+MHS0128,"R. Sabar Saragih, S.Psi",18,93,70.83,0,73.9,IPK 2.5–3.0,6,2,7,64.9,0
+MHS0129,Hj. Rahayu Purnawati,7,29,70.65,1,56.2,IPK < 2.5,35,7,7,28.1,0
+MHS0130,Sari Laksmiwati,5,21,54.94,8,10.8,IPK > 3.0,18,6,7,20.5,0
+MHS0131,Dimas Gunarto,9,56,86.76,7,70.5,IPK > 3.0,6,2,7,81.0,0
+MHS0132,Ihsan Nababan,30,10,87.37,2,70.6,IPK 2.5–3.0,33,8,3,32.0,0
+MHS0133,"Gawati Prasetyo, S.IP",18,99,71.27,7,93.4,IPK < 2.5,19,11,3,27.9,0
+MHS0134,"Balidin Sitorus, S.IP",43,23,79.17,0,52.2,IPK 2.5–3.0,16,1,2,78.6,0
+MHS0135,"Elvin Marbun, S.Sos",31,73,70.61,9,26.9,IPK 2.5–3.0,32,2,7,75.4,1
+MHS0136,Sutan Ikin Santoso,13,47,64.22,3,9.2,IPK > 3.0,24,1,1,45.9,0
+MHS0137,R. Aris Prasetya,19,46,73.04,2,44.5,IPK < 2.5,28,12,4,49.1,0
+MHS0138,"Hj. Ida Budiman, M.Kom.",19,20,67.65,5,33.7,IPK < 2.5,25,0,2,27.4,0
+MHS0139,Marsito Aryani,30,86,69.87,6,77.3,IPK < 2.5,14,3,1,16.3,0
+MHS0140,Ir. Kania Januar,46,12,79.19,3,38.7,IPK < 2.5,18,4,7,55.9,0
+MHS0141,"Puti Qori Aryani, M.Kom.",17,42,64.05,6,95.2,IPK 2.5–3.0,22,12,5,17.9,1
+MHS0142,Oskar Wijayanti,36,15,42.04,8,96.4,IPK 2.5–3.0,28,5,7,45.9,0
+MHS0143,"Dariati Wijaya, S.Farm",43,59,48.2,1,64.0,IPK > 3.0,18,4,3,85.2,0
+MHS0144,Bagas Uyainah,36,19,61.93,2,93.2,IPK 2.5–3.0,38,0,4,86.2,0
+MHS0145,Zahra Oktaviani,8,14,76.24,4,77.3,IPK 2.5–3.0,16,2,6,29.1,1
+MHS0146,"Ciaobella Pradana, S.Farm",34,32,69.66,2,57.0,IPK > 3.0,26,0,4,59.9,0
+MHS0147,Dadi Wijayanti,41,19,72.51,7,22.1,IPK > 3.0,10,10,6,47.9,0
+MHS0148,Gaman Pratiwi,27,53,63.96,9,48.6,IPK > 3.0,26,4,4,80.1,0
+MHS0149,drg. Devi Prasetya,43,11,70.79,7,58.3,IPK 2.5–3.0,18,4,3,31.7,0
+MHS0150,Amalia Saefullah,49,22,56.45,7,87.1,IPK 2.5–3.0,20,11,6,10.3,0
+MHS0151,Shania Mardhiyah,19,49,63.51,8,50.7,IPK > 3.0,29,10,1,23.0,0
+MHS0152,Jindra Samosir,47,11,77.21,3,90.3,IPK > 3.0,36,12,6,38.0,0
+MHS0153,Kusuma Palastri,33,93,83.59,4,69.1,IPK > 3.0,37,5,2,35.3,0
+MHS0154,"Dr. Kani Andriani, S.Ked",40,74,61.68,4,18.0,IPK 2.5–3.0,24,7,1,73.3,0
+MHS0155,R. Kasim Marpaung,17,72,42.18,7,99.5,IPK 2.5–3.0,22,9,2,64.4,0
+MHS0156,Cut Natalia Palastri,36,82,48.08,6,55.1,IPK < 2.5,7,11,7,34.0,0
+MHS0157,Ir. Naradi Puspita,11,26,41.04,8,42.2,IPK 2.5–3.0,27,0,4,46.6,0
+MHS0158,Endah Prasetya,26,18,72.66,7,67.6,IPK 2.5–3.0,36,3,1,17.6,0
+MHS0159,Agus Prayoga,32,84,56.62,1,15.3,IPK 2.5–3.0,20,9,4,81.9,1
+MHS0160,Lurhur Budiman,6,24,67.12,9,65.5,IPK > 3.0,9,10,7,84.8,0
+MHS0161,"Belinda Nurdiyanti, S.Pt",46,33,64.66,3,52.3,IPK 2.5–3.0,8,0,5,88.4,0
+MHS0162,"drg. Latika Pradana, S.I.Kom",49,47,44.08,5,43.6,IPK > 3.0,25,8,4,79.5,0
+MHS0163,Sutan Wisnu Puspita,10,44,60.16,1,95.5,IPK < 2.5,18,10,7,23.9,0
+MHS0164,Novi Iswahyudi,32,58,51.03,6,54.6,IPK < 2.5,35,6,4,13.7,0
+MHS0165,Karsana Wastuti,32,78,60.92,2,25.8,IPK > 3.0,18,6,7,56.4,1
+MHS0166,"Dr. Wulan Sinaga, M.Pd",48,71,50.18,2,48.6,IPK > 3.0,10,11,2,83.0,0
+MHS0167,"Kusuma Damanik, M.Kom.",48,69,82.02,1,92.3,IPK > 3.0,16,4,7,24.2,0
+MHS0168,Rudi Maulana,24,59,48.71,7,21.7,IPK 2.5–3.0,20,6,6,10.6,0
+MHS0169,"dr. Yance Halim, S.T.",34,87,88.04,5,25.3,IPK < 2.5,21,11,5,74.4,0
+MHS0170,Ian Safitri,15,84,60.8,0,6.2,IPK > 3.0,27,14,4,16.1,0
+MHS0171,"Ega Tampubolon, S.IP",32,18,82.31,0,6.3,IPK 2.5–3.0,18,1,7,43.1,0
+MHS0172,Zahra Halimah,29,43,71.44,6,83.8,IPK < 2.5,11,13,7,64.3,0
+MHS0173,"Puti Yessi Wasita, M.Ak",43,85,76.77,7,74.6,IPK 2.5–3.0,36,12,4,28.9,0
+MHS0174,Ajiono Kusumo,37,44,78.39,4,38.7,IPK < 2.5,19,3,5,16.7,0
+MHS0175,"Vera Thamrin, S.Pd",5,10,65.24,4,71.3,IPK 2.5–3.0,21,13,5,71.6,0
+MHS0176,"Cahyadi Rajasa, S.Psi",31,49,67.17,3,42.5,IPK < 2.5,38,13,7,60.4,0
+MHS0177,Karimah Wahyuni,17,73,65.7,5,95.5,IPK < 2.5,9,6,1,89.1,0
+MHS0178,"Sutan Harimurti Suryatmi, M.Ak",45,31,69.4,5,96.9,IPK 2.5–3.0,31,2,2,37.5,0
+MHS0179,Jatmiko Maryadi,7,69,41.47,2,42.3,IPK > 3.0,27,1,5,14.9,1
+MHS0180,Kasusra Winarsih,43,73,59.78,8,86.2,IPK < 2.5,18,9,5,68.7,0
+MHS0181,"Ratih Hutapea, M.M.",10,81,70.31,6,78.4,IPK > 3.0,19,1,3,51.7,1
+MHS0182,Mala Kuswoyo,12,20,69.89,0,34.4,IPK 2.5–3.0,37,12,6,27.1,0
+MHS0183,"Ghani Hutasoit, S.Pd",31,23,79.65,6,27.0,IPK > 3.0,35,0,5,72.5,0
+MHS0184,"drg. Malik Wacana, S.Kom",13,69,72.75,4,48.5,IPK > 3.0,39,4,2,26.3,0
+MHS0185,Titin Kurniawan,41,39,89.61,4,79.2,IPK > 3.0,21,11,6,30.9,0
+MHS0186,Rahmi Hardiansyah,37,44,54.19,1,96.2,IPK > 3.0,32,5,6,17.4,0
+MHS0187,"Rahmat Haryanto, S.Ked",46,94,57.96,3,77.5,IPK > 3.0,23,5,4,42.0,0
+MHS0188,"Melinda Manullang, M.Kom.",48,46,59.19,5,86.2,IPK < 2.5,27,8,4,43.5,0
+MHS0189,Eka Hasanah,28,14,63.29,9,62.3,IPK < 2.5,36,3,4,51.2,0
+MHS0190,"drg. Kezia Mandala, S.Farm",19,92,81.8,6,84.4,IPK < 2.5,17,0,4,66.7,0
+MHS0191,"Drs. Utama Halim, S.Pd",36,87,51.79,4,79.5,IPK 2.5–3.0,24,5,3,82.5,0
+MHS0192,Tgk. Icha Wibisono,36,35,78.8,8,40.8,IPK > 3.0,39,14,5,21.0,0
+MHS0193,Harjasa Saptono,28,71,60.27,2,57.4,IPK < 2.5,9,4,4,14.3,0
+MHS0194,"Dr. Paramita Kuswoyo, M.M.",45,13,70.09,0,81.5,IPK 2.5–3.0,13,9,7,11.5,0
+MHS0195,"dr. Jail Suartini, S.T.",16,98,71.63,3,9.4,IPK < 2.5,33,5,1,21.5,1
+MHS0196,Baktiadi Mandala,43,51,58.64,8,81.8,IPK < 2.5,10,2,4,62.6,0
+MHS0197,Hafshah Wahyudin,6,98,65.63,3,21.9,IPK > 3.0,29,1,5,68.2,0
+MHS0198,drg. Siska Prayoga,7,27,60.65,1,53.9,IPK 2.5–3.0,35,5,4,72.9,0
+MHS0199,Tugiman Nasyiah,41,49,43.46,9,81.8,IPK > 3.0,26,12,3,29.5,0
+MHS0200,Vino Hutagalung,21,81,61.86,4,29.1,IPK > 3.0,6,0,2,34.5,0
+MHS0201,Calista Sihombing,6,48,44.87,2,28.4,IPK < 2.5,9,6,2,48.7,0
+MHS0202,Pia Haryanto,6,23,60.25,8,43.3,IPK > 3.0,31,6,5,15.1,0
+MHS0203,Lala Situmorang,32,41,69.65,3,90.0,IPK 2.5–3.0,29,9,7,58.9,1
+MHS0204,Tami Pangestu,27,60,68.97,5,5.0,IPK > 3.0,12,12,2,88.7,0
+MHS0205,Puti Padmi Januar,41,47,73.13,1,90.6,IPK > 3.0,5,6,2,38.9,0
+MHS0206,H. Paiman Hasanah,36,32,44.76,5,19.6,IPK > 3.0,24,14,1,70.2,0
+MHS0207,Wirda Safitri,37,72,72.61,2,99.1,IPK < 2.5,27,11,5,50.0,0
+MHS0208,Karna Rajasa,5,24,55.61,8,95.7,IPK 2.5–3.0,36,10,7,20.2,0
+MHS0209,"Samiah Mandasari, M.M.",23,34,59.95,1,52.0,IPK < 2.5,15,9,5,56.6,0
+MHS0210,Dasa Lailasari,6,26,82.9,8,53.7,IPK < 2.5,28,0,2,34.0,0
+MHS0211,"Hilda Haryanti, S.Pd",48,75,40.45,4,50.7,IPK < 2.5,15,14,2,12.8,0
+MHS0212,Nadine Suryatmi,30,87,69.42,7,65.4,IPK < 2.5,33,3,2,60.8,1
+MHS0213,"Dr. Simon Rahayu, M.Farm",36,62,69.94,1,13.6,IPK < 2.5,30,12,6,78.7,0
+MHS0214,Laila Nasyidah,10,60,59.83,5,8.1,IPK 2.5–3.0,20,6,3,37.6,0
+MHS0215,R.M. Kunthara Mangunsong,36,48,51.85,2,10.5,IPK > 3.0,39,10,4,41.2,0
+MHS0216,R.A. Safina Pratama,8,60,51.73,9,47.2,IPK < 2.5,24,8,3,81.3,0
+MHS0217,Tgk. Vera Yolanda,15,79,84.19,4,31.2,IPK < 2.5,7,4,5,75.1,0
+MHS0218,"Tirtayasa Prakasa, M.Pd",21,15,62.1,7,64.1,IPK 2.5–3.0,5,12,1,67.2,0
+MHS0219,"Sutan Prabowo Palastri, S.E.I",42,76,56.54,9,99.3,IPK 2.5–3.0,5,1,4,29.9,0
+MHS0220,"Dr. Wisnu Adriansyah, S.Gz",28,16,62.44,0,41.7,IPK > 3.0,21,6,1,82.8,0
+MHS0221,Makara Utami,9,60,73.47,4,59.5,IPK 2.5–3.0,6,9,7,22.4,0
+MHS0222,"Dr. Wadi Hardiansyah, S.Sos",38,81,47.29,2,44.5,IPK > 3.0,33,0,6,60.1,0
+MHS0223,Ian Farida,10,51,62.47,3,85.5,IPK < 2.5,24,6,5,12.3,0
+MHS0224,Purwa Padmasari,26,73,69.39,1,90.7,IPK < 2.5,10,5,6,61.5,0
+MHS0225,Zaenab Latupono,15,24,87.43,8,88.3,IPK > 3.0,12,6,5,32.2,1
+MHS0226,Makara Irawan,20,38,52.63,2,97.6,IPK 2.5–3.0,33,13,1,46.0,1
+MHS0227,Prabawa Hutapea,37,42,57.96,1,7.6,IPK > 3.0,37,12,1,37.6,0
+MHS0228,Harja Hardiansyah,13,36,58.97,9,84.8,IPK 2.5–3.0,7,9,1,23.8,0
+MHS0229,"Sutan Gangsar Prakasa, M.Farm",10,45,70.28,8,76.4,IPK < 2.5,39,2,5,59.8,0
+MHS0230,Ajeng Saefullah,20,38,57.84,6,26.7,IPK 2.5–3.0,9,14,2,80.6,0
+MHS0231,Sarah Saputra,33,47,66.68,5,95.9,IPK > 3.0,31,2,1,86.7,0
+MHS0232,Elma Prasasta,7,66,79.09,0,19.1,IPK > 3.0,16,6,6,25.4,0
+MHS0233,T. Empluk Lailasari,24,36,75.27,4,69.6,IPK < 2.5,24,12,7,67.4,0
+MHS0234,Dr. Maida Nababan,40,64,62.32,2,26.4,IPK 2.5–3.0,24,1,4,63.1,1
+MHS0235,Bakianto Wibowo,23,42,83.21,0,46.0,IPK 2.5–3.0,13,0,5,37.5,0
+MHS0236,"Maras Irawan, S.E.",30,77,67.91,3,73.3,IPK 2.5–3.0,8,8,6,11.5,0
+MHS0237,"R. Jais Winarno, M.Ak",7,95,67.0,1,58.5,IPK < 2.5,23,8,3,65.2,0
+MHS0238,Hartaka Sitorus,23,75,41.71,1,45.6,IPK 2.5–3.0,31,6,7,85.6,0
+MHS0239,Hesti Santoso,24,19,89.33,2,36.0,IPK > 3.0,17,6,3,60.6,0
+MHS0240,"R.M. Marsudi Prasasta, M.Kom.",36,14,46.15,7,84.8,IPK 2.5–3.0,17,2,4,44.8,0
+MHS0241,Dewi Pradana,11,83,51.56,7,18.7,IPK < 2.5,26,9,2,52.0,1
+MHS0242,"drg. Kardi Dabukke, S.Psi",45,47,42.58,6,45.9,IPK 2.5–3.0,32,14,1,26.0,0
+MHS0243,Asmuni Zulaika,37,22,72.0,5,90.9,IPK 2.5–3.0,26,1,5,70.0,0
+MHS0244,Marsito Usamah,44,40,51.24,8,85.4,IPK > 3.0,23,10,6,69.7,0
+MHS0245,"Dr. Janet Irawan, S.IP",43,56,49.0,3,43.1,IPK 2.5–3.0,12,6,1,21.6,0
+MHS0246,Cawisono Siregar,22,97,44.43,0,77.5,IPK > 3.0,12,8,6,80.2,0
+MHS0247,T. Praba Uwais,44,61,45.17,7,83.2,IPK > 3.0,30,0,5,31.5,1
+MHS0248,Bambang Habibi,5,65,69.23,6,89.4,IPK < 2.5,30,12,3,88.6,0
+MHS0249,Farah Usamah,15,24,74.41,6,56.7,IPK > 3.0,27,13,1,40.6,0
+MHS0250,Usman Rahayu,32,38,59.87,2,24.4,IPK > 3.0,17,3,4,24.2,0
+MHS0251,Ir. Gasti Prakasa,29,17,63.99,3,29.3,IPK < 2.5,32,5,2,38.1,1
+MHS0252,"Cut Carla Farida, S.Pd",27,14,74.3,9,33.1,IPK > 3.0,13,6,4,45.2,0
+MHS0253,Ghaliyati Kuswandari,35,38,40.87,8,61.4,IPK < 2.5,24,9,2,15.5,0
+MHS0254,"Cahyanto Suartini, M.TI.",34,56,56.16,5,8.1,IPK 2.5–3.0,23,6,7,56.3,0
+MHS0255,Wahyu Yuliarti,46,77,88.65,4,65.4,IPK < 2.5,16,9,6,57.8,0
+MHS0256,"R.M. Paiman Marpaung, S.Farm",39,85,69.01,2,39.6,IPK > 3.0,19,1,1,69.1,0
+MHS0257,"Nabila Nasyidah, M.Farm",11,54,52.71,8,33.0,IPK < 2.5,35,13,1,12.3,0
+MHS0258,Kamila Iswahyudi,20,11,66.09,4,88.6,IPK > 3.0,18,3,7,53.3,0
+MHS0259,Dadi Astuti,30,36,57.13,4,48.7,IPK 2.5–3.0,15,4,2,14.2,0
+MHS0260,Jagaraga Jailani,6,45,66.61,3,14.0,IPK < 2.5,30,13,3,66.1,0
+MHS0261,Kasim Kuswoyo,5,45,46.29,3,83.5,IPK 2.5–3.0,31,11,5,14.5,0
+MHS0262,Pandu Kuswoyo,16,35,46.64,0,9.5,IPK > 3.0,15,0,4,82.9,0
+MHS0263,"Ulva Sihombing, S.Psi",9,52,47.18,6,74.0,IPK > 3.0,38,0,7,66.2,0
+MHS0264,"Latika Ardianto, S.Sos",41,36,86.99,8,78.5,IPK 2.5–3.0,23,9,6,50.6,0
+MHS0265,Margana Wijayanti,36,78,76.64,2,38.5,IPK < 2.5,10,2,7,45.3,0
+MHS0266,"Rahmi Tampubolon, S.E.",13,29,48.12,1,83.4,IPK < 2.5,32,14,4,20.5,0
+MHS0267,"Cut Rahayu Hidayat, M.Farm",45,20,49.42,2,54.0,IPK > 3.0,5,14,4,33.3,0
+MHS0268,"R.A. Ella Prabowo, S.Kom",39,83,76.54,0,49.0,IPK 2.5–3.0,39,9,6,79.5,0
+MHS0269,"Mulyanto Maulana, S.E.",23,47,47.81,5,9.3,IPK 2.5–3.0,12,2,6,82.4,1
+MHS0270,Ir. Jumadi Sirait,20,15,51.73,6,32.6,IPK < 2.5,11,11,1,10.1,1
+MHS0271,Gatot Nurdiyanti,7,81,88.17,1,93.4,IPK < 2.5,15,7,4,57.5,0
+MHS0272,"Ihsan Prasetya, S.Kom",24,32,52.77,7,42.2,IPK < 2.5,8,8,5,67.5,0
+MHS0273,Gada Nasyiah,28,56,73.08,5,56.9,IPK 2.5–3.0,29,14,5,59.5,0
+MHS0274,Yahya Dongoran,37,99,88.93,3,55.5,IPK < 2.5,16,13,2,16.5,0
+MHS0275,R. Nilam Mahendra,28,55,58.71,4,61.1,IPK < 2.5,30,10,7,27.4,0
+MHS0276,Zelaya Budiyanto,15,21,40.88,7,10.8,IPK > 3.0,16,11,6,30.0,0
+MHS0277,R.A. Gawati Siregar,12,99,52.21,2,39.4,IPK < 2.5,28,0,1,76.5,0
+MHS0278,Shania Kurniawan,40,22,81.54,2,73.7,IPK < 2.5,20,13,5,47.1,0
+MHS0279,"Cahya Prasasta, S.Ked",42,71,83.23,3,24.1,IPK 2.5–3.0,17,10,3,48.9,0
+MHS0280,"Dr. Ulva Salahudin, S.Ked",44,91,78.43,0,24.3,IPK 2.5–3.0,29,1,1,84.8,0
+MHS0281,"Puti Devi Sirait, S.T.",24,98,45.66,8,6.0,IPK > 3.0,8,9,1,61.0,0
+MHS0282,Edward Hastuti,39,69,79.78,7,46.6,IPK < 2.5,15,1,5,81.9,1
+MHS0283,Ulva Wulandari,29,52,85.93,7,88.9,IPK > 3.0,36,14,3,46.5,1
+MHS0284,"Novi Maheswara, M.M.",39,85,70.03,9,9.9,IPK 2.5–3.0,11,3,2,22.0,1
+MHS0285,Raditya Lestari,29,77,87.04,5,23.2,IPK > 3.0,15,1,5,84.4,0
+MHS0286,"Dina Wijaya, M.M.",33,14,81.34,6,34.5,IPK 2.5–3.0,32,6,3,46.7,0
+MHS0287,Teddy Novitasari,22,46,73.35,5,74.5,IPK > 3.0,27,12,1,24.5,0
+MHS0288,"KH. Nugraha Pradipta, S.IP",22,81,68.86,8,65.9,IPK > 3.0,27,14,3,34.2,0
+MHS0289,drg. Lalita Puspasari,6,40,57.43,2,44.5,IPK < 2.5,32,8,1,14.1,0
+MHS0290,Ani Waluyo,39,18,47.96,2,77.1,IPK > 3.0,30,6,7,47.5,0
+MHS0291,Genta Mansur,20,60,70.25,2,62.9,IPK < 2.5,29,11,5,78.3,0
+MHS0292,"Puti Ulya Firmansyah, M.Ak",45,38,55.91,9,90.1,IPK < 2.5,33,5,6,84.7,1
+MHS0293,Emin Hartati,40,87,83.32,2,82.7,IPK < 2.5,23,14,5,84.6,0
+MHS0294,"Mila Marpaung, M.Kom.",37,49,89.67,8,29.0,IPK < 2.5,37,9,7,20.0,0
+MHS0295,"Ir. Raditya Hutapea, M.TI.",8,50,77.62,3,30.8,IPK > 3.0,18,0,4,40.6,1
+MHS0296,"Cindy Hastuti, S.Pd",37,95,44.52,6,16.9,IPK 2.5–3.0,18,10,4,12.3,0
+MHS0297,Mala Wibisono,18,20,54.43,8,37.0,IPK 2.5–3.0,39,9,4,78.4,0
+MHS0298,Vanya Nuraini,25,32,45.46,6,100.0,IPK 2.5–3.0,34,8,5,38.7,0
+MHS0299,Oskar Yuniar,24,10,72.53,8,43.5,IPK > 3.0,32,4,2,60.5,1
+MHS0300,Narji Lestari,12,55,78.26,2,25.9,IPK < 2.5,21,10,5,67.2,1
+MHS0301,Jasmin Marpaung,11,30,86.28,3,77.4,IPK 2.5–3.0,7,4,7,44.4,0
+MHS0302,"Raisa Hasanah, S.Kom",7,99,61.91,7,56.5,IPK > 3.0,20,5,7,34.5,1
+MHS0303,Jasmin Hutapea,21,45,85.07,5,19.2,IPK < 2.5,34,8,6,87.0,0
+MHS0304,Kasusra Wijayanti,37,63,83.89,4,41.2,IPK 2.5–3.0,33,12,3,87.2,0
+MHS0305,Mala Natsir,16,96,55.86,3,44.4,IPK < 2.5,19,7,5,33.2,1
+MHS0306,"Paulin Budiman, M.M.",26,66,83.45,7,76.6,IPK 2.5–3.0,29,7,5,48.4,0
+MHS0307,Karimah Winarno,26,10,58.78,0,7.0,IPK 2.5–3.0,27,13,1,87.8,0
+MHS0308,Najwa Farida,34,72,54.84,8,30.6,IPK 2.5–3.0,29,7,7,10.4,1
+MHS0309,Laila Purnawati,42,63,72.45,0,54.2,IPK < 2.5,11,0,1,43.0,0
+MHS0310,Ulya Nashiruddin,42,64,56.42,7,30.5,IPK > 3.0,26,0,1,18.0,0
+MHS0311,"Kani Agustina, S.Sos",49,49,71.51,3,64.7,IPK < 2.5,21,7,5,50.7,0
+MHS0312,Dalima Gunawan,12,24,70.49,8,50.8,IPK 2.5–3.0,22,4,2,12.0,0
+MHS0313,Raditya Marbun,31,30,68.17,4,39.4,IPK < 2.5,14,8,3,42.6,0
+MHS0314,Malika Prasetyo,31,56,59.02,2,95.2,IPK > 3.0,14,1,3,27.7,0
+MHS0315,Tantri Sudiati,38,82,67.42,8,65.1,IPK < 2.5,11,8,7,52.7,0
+MHS0316,drg. Adiarja Yulianti,25,62,69.82,8,17.3,IPK > 3.0,31,11,6,89.7,0
+MHS0317,"Drs. Ifa Haryanto, M.Pd",34,18,67.28,3,58.2,IPK > 3.0,37,13,7,74.0,0
+MHS0318,Ika Oktaviani,37,83,62.22,3,79.2,IPK < 2.5,5,7,2,77.7,0
+MHS0319,Drs. Latif Pudjiastuti,32,61,40.73,7,72.3,IPK 2.5–3.0,38,8,2,60.8,1
+MHS0320,"Sutan Jarwa Wahyuni, M.TI.",37,66,69.35,1,21.3,IPK > 3.0,8,3,3,13.3,0
+MHS0321,Cahyanto Uyainah,9,35,48.42,8,97.4,IPK < 2.5,21,0,4,26.5,0
+MHS0322,"Bagiya Sudiati, M.TI.",23,50,72.13,5,47.6,IPK > 3.0,8,0,1,84.0,1
+MHS0323,R.A. Putri Zulaika,8,44,77.97,8,20.1,IPK 2.5–3.0,30,4,1,39.3,0
+MHS0324,Cemeti Suryatmi,39,72,65.02,7,22.1,IPK < 2.5,8,1,3,18.3,1
+MHS0325,"R.A. Ifa Pertiwi, S.Sos",21,34,67.12,6,14.3,IPK < 2.5,5,13,7,66.2,1
+MHS0326,"Galih Wacana, M.Farm",48,99,87.57,0,81.3,IPK < 2.5,11,7,2,34.0,0
+MHS0327,Bajragin Hasanah,32,84,82.36,2,16.6,IPK 2.5–3.0,34,9,7,31.5,0
+MHS0328,Ophelia Yuliarti,34,47,85.71,1,16.9,IPK > 3.0,13,10,6,89.8,1
+MHS0329,"R. Shakila Suryatmi, M.Farm",33,11,80.69,4,85.8,IPK < 2.5,39,4,4,78.7,0
+MHS0330,H. Dadi Widodo,10,16,45.45,4,37.7,IPK > 3.0,12,4,3,42.6,0
+MHS0331,Rina Palastri,39,91,47.45,4,7.9,IPK > 3.0,28,1,1,88.4,1
+MHS0332,Kawaca Safitri,45,43,66.33,3,9.9,IPK 2.5–3.0,23,6,5,62.0,0
+MHS0333,Karja Lailasari,41,26,52.3,4,18.5,IPK < 2.5,31,12,7,69.4,0
+MHS0334,Nilam Waluyo,28,52,63.83,2,25.3,IPK > 3.0,36,7,2,12.5,0
+MHS0335,Ganda Mardhiyah,33,68,59.72,0,68.2,IPK < 2.5,18,9,5,19.7,0
+MHS0336,"Adhiarja Putra, S.IP",35,60,67.47,4,19.9,IPK < 2.5,22,12,6,60.6,0
+MHS0337,"Sutan Laksana Pratama, M.Pd",39,63,77.34,8,16.3,IPK 2.5–3.0,32,0,3,81.9,0
+MHS0338,Tantri Lazuardi,37,33,75.77,8,77.6,IPK < 2.5,33,1,7,59.9,0
+MHS0339,R. Vanesa Purnawati,25,34,66.06,3,68.8,IPK < 2.5,20,9,1,20.7,0
+MHS0340,Jarwadi Natsir,36,80,81.12,2,46.4,IPK > 3.0,39,3,7,19.3,0
+MHS0341,Daniswara Prabowo,27,61,61.54,0,57.2,IPK 2.5–3.0,35,4,4,77.5,1
+MHS0342,Dimas Hassanah,37,79,84.84,1,34.6,IPK < 2.5,8,12,5,21.1,0
+MHS0343,R.M. Luis Mandasari,7,97,43.56,7,50.8,IPK > 3.0,21,1,4,51.6,0
+MHS0344,Hartana Suryono,22,42,87.73,0,53.1,IPK 2.5–3.0,30,0,6,13.0,1
+MHS0345,"Ir. Siska Wulandari, M.Farm",29,58,72.73,7,41.8,IPK 2.5–3.0,8,8,1,16.5,1
+MHS0346,"Hasna Lazuardi, S.T.",46,38,59.0,6,91.1,IPK > 3.0,34,13,5,63.8,0
+MHS0347,Jasmani Saputra,35,72,49.86,7,6.5,IPK > 3.0,34,0,6,65.1,0
+MHS0348,Ir. Tira Siregar,7,31,63.96,5,79.3,IPK > 3.0,26,12,4,37.3,1
+MHS0349,"T. Yahya Megantara, S.Pt",44,35,49.73,8,16.8,IPK > 3.0,15,14,4,27.2,0
+MHS0350,"Asmianto Wulandari, M.Pd",28,37,48.32,2,80.8,IPK > 3.0,6,3,5,75.1,0
+MHS0351,"Cut Michelle Lestari, S.Pt",36,94,70.87,9,63.5,IPK < 2.5,16,1,1,27.4,0
+MHS0352,R.M. Johan Mandala,26,58,66.15,3,85.1,IPK < 2.5,34,10,4,53.4,0
+MHS0353,Cut Icha Pratiwi,27,80,73.5,5,14.3,IPK 2.5–3.0,22,3,3,87.5,0
+MHS0354,Ayu Sihombing,6,90,86.48,7,58.1,IPK < 2.5,30,7,6,21.8,0
+MHS0355,Dt. Wardaya Wahyudin,31,93,66.61,4,52.6,IPK < 2.5,11,7,5,85.3,0
+MHS0356,Kemal Hutapea,46,58,69.05,2,72.1,IPK < 2.5,5,14,2,24.6,0
+MHS0357,Umi Iswahyudi,6,29,44.48,5,55.8,IPK > 3.0,30,10,2,55.4,0
+MHS0358,Dr. Kiandra Jailani,30,95,75.88,3,56.4,IPK 2.5–3.0,27,11,1,40.2,0
+MHS0359,Puti Mandala,21,72,60.0,8,45.8,IPK 2.5–3.0,30,8,3,87.2,0
+MHS0360,Ibun Sihotang,44,70,88.84,2,34.3,IPK 2.5–3.0,10,12,4,31.9,1
+MHS0361,Hj. Latika Anggriawan,37,58,81.16,3,50.8,IPK 2.5–3.0,10,14,2,42.0,1
+MHS0362,"Cut Janet Manullang, M.Pd",13,80,66.12,6,16.3,IPK < 2.5,12,10,1,88.6,0
+MHS0363,"Ghaliyati Usada, M.Pd",47,10,46.16,6,96.3,IPK < 2.5,28,14,6,52.9,0
+MHS0364,Bakidin Maulana,43,22,82.97,3,72.9,IPK > 3.0,26,11,3,50.2,0
+MHS0365,Bella Rahimah,33,96,79.99,5,95.5,IPK 2.5–3.0,23,4,3,30.6,0
+MHS0366,Baktiono Purnawati,46,60,49.23,2,26.5,IPK < 2.5,22,6,7,66.1,0
+MHS0367,Drs. Elma Prastuti,30,65,54.76,5,88.5,IPK < 2.5,35,2,1,11.1,1
+MHS0368,"drg. Ismail Wastuti, S.H.",39,92,79.67,1,81.8,IPK > 3.0,34,9,1,14.0,1
+MHS0369,Rini Hasanah,29,71,49.26,7,69.3,IPK > 3.0,37,3,7,57.9,0
+MHS0370,"R. Pranawa Tarihoran, M.M.",28,41,85.89,1,64.4,IPK > 3.0,14,9,4,37.3,0
+MHS0371,Makara Puspita,17,39,61.23,6,35.1,IPK < 2.5,16,8,1,86.3,0
+MHS0372,Soleh Simbolon,11,38,44.35,8,82.6,IPK < 2.5,34,9,7,82.3,0
+MHS0373,"Tgk. Mala Laksmiwati, S.Kom",40,58,80.79,0,52.6,IPK > 3.0,31,9,4,67.1,0
+MHS0374,Luis Natsir,49,54,58.68,7,11.7,IPK 2.5–3.0,13,13,4,75.5,0
+MHS0375,Hendri Waluyo,24,39,66.32,6,34.7,IPK > 3.0,25,11,5,63.4,0
+MHS0376,"Garan Sirait, S.E.",5,25,45.62,5,93.9,IPK > 3.0,16,0,3,20.0,0
+MHS0377,Marwata Kuswandari,12,49,40.13,5,85.8,IPK > 3.0,33,1,6,71.2,0
+MHS0378,Gilang Utama,20,28,71.9,5,98.3,IPK > 3.0,37,4,3,26.8,1
+MHS0379,Dr. Kani Wahyudin,18,27,65.76,8,64.7,IPK < 2.5,19,2,3,35.9,1
+MHS0380,Darsirah Iswahyudi,16,10,69.68,1,28.5,IPK 2.5–3.0,6,1,5,75.5,1
+MHS0381,"Drs. Olivia Suryono, M.TI.",27,87,79.69,0,20.5,IPK > 3.0,22,0,4,52.9,0
+MHS0382,"Fitria Hutasoit, S.Sos",19,56,72.33,5,22.8,IPK 2.5–3.0,7,9,4,78.8,0
+MHS0383,"Cut Mala Utama, S.H.",32,75,48.74,9,6.9,IPK 2.5–3.0,11,2,1,27.0,0
+MHS0384,"Sutan Aswani Dabukke, S.Kom",38,47,58.04,7,42.1,IPK 2.5–3.0,22,0,5,58.6,1
+MHS0385,"drg. Ajiman Pangestu, S.Pd",6,60,85.29,2,23.2,IPK > 3.0,37,11,1,16.7,0
+MHS0386,Aditya Permadi,36,72,78.5,9,44.1,IPK < 2.5,35,0,5,61.4,0
+MHS0387,R.A. Tami Sudiati,27,13,67.83,0,93.8,IPK > 3.0,15,11,1,71.0,0
+MHS0388,"R.A. Dina Maryadi, S.Sos",26,10,52.78,8,45.9,IPK 2.5–3.0,8,0,2,56.8,0
+MHS0389,Zulfa Hardiansyah,29,17,55.1,0,88.4,IPK 2.5–3.0,22,7,7,31.3,0
+MHS0390,"Ibun Wijaya, S.Gz",26,38,76.6,2,62.5,IPK < 2.5,8,14,3,12.5,0
+MHS0391,"Sutan Niyaga Sihombing, S.T.",26,64,82.56,7,28.5,IPK > 3.0,38,2,3,19.6,0
+MHS0392,Kania Maheswara,46,12,73.57,2,38.8,IPK 2.5–3.0,33,10,6,59.8,0
+MHS0393,Tami Hassanah,10,41,80.48,3,13.0,IPK < 2.5,28,0,7,84.8,0
+MHS0394,Raharja Aryani,19,19,78.33,7,36.7,IPK 2.5–3.0,26,6,4,26.5,1
+MHS0395,Uchita Zulkarnain,47,83,47.49,0,69.4,IPK < 2.5,6,9,6,68.8,0
+MHS0396,Violet Gunawan,41,92,61.2,5,11.9,IPK < 2.5,10,2,2,79.3,1
+MHS0397,Daryani Widodo,37,43,47.65,0,24.5,IPK > 3.0,29,7,6,51.7,0
+MHS0398,Rachel Lestari,12,96,51.76,0,41.2,IPK 2.5–3.0,25,3,3,63.5,0
+MHS0399,Harsanto Purnawati,48,64,83.46,7,98.3,IPK > 3.0,20,3,4,75.2,0
+MHS0400,Zelda Mansur,48,41,63.64,3,79.6,IPK 2.5–3.0,35,4,2,30.9,0
+MHS0401,Jono Mahendra,9,59,66.77,0,74.7,IPK > 3.0,18,5,3,33.8,0
+MHS0402,"Drs. Bahuwarna Situmorang, S.Ked",43,16,48.92,9,16.0,IPK 2.5–3.0,32,6,7,10.1,0
+MHS0403,Mahesa Hidayat,8,17,55.61,6,79.2,IPK > 3.0,36,13,1,87.0,0
+MHS0404,Wadi Hutagalung,10,74,51.51,4,79.6,IPK < 2.5,32,13,5,83.4,0
+MHS0405,Kayla Hariyah,49,66,50.31,4,62.1,IPK 2.5–3.0,13,3,2,71.2,1
+MHS0406,"R.A. Jasmin Siregar, S.Kom",36,76,71.9,0,99.1,IPK 2.5–3.0,26,7,4,16.3,0
+MHS0407,Tantri Gunawan,34,97,52.84,9,35.9,IPK < 2.5,36,12,6,45.8,0
+MHS0408,Widya Kuswandari,39,96,71.6,5,94.4,IPK > 3.0,9,5,7,18.2,0
+MHS0409,Elma Dabukke,44,68,42.92,8,91.9,IPK 2.5–3.0,27,13,6,11.3,0
+MHS0410,Respati Maryadi,20,81,47.09,8,6.1,IPK 2.5–3.0,9,0,2,59.3,0
+MHS0411,Almira Jailani,17,63,53.73,7,47.8,IPK > 3.0,36,0,7,86.9,0
+MHS0412,"Gina Nasyiah, S.Ked",46,76,69.85,4,97.8,IPK < 2.5,14,8,4,82.2,0
+MHS0413,Siti Nuraini,34,60,73.79,0,14.8,IPK > 3.0,19,9,2,65.7,0
+MHS0414,"Garda Hartati, S.Kom",23,17,62.14,8,57.0,IPK > 3.0,11,5,4,17.7,0
+MHS0415,Jaga Ramadan,21,43,62.29,0,98.0,IPK > 3.0,33,9,6,31.9,0
+MHS0416,Harjo Simbolon,23,44,76.23,7,57.8,IPK 2.5–3.0,7,7,3,35.6,0
+MHS0417,Ayu Santoso,32,97,40.79,4,23.0,IPK < 2.5,23,12,7,71.1,0
+MHS0418,"dr. Tina Laksmiwati, M.TI.",30,87,57.05,2,60.3,IPK < 2.5,14,6,1,74.2,0
+MHS0419,Taufan Widodo,41,41,80.94,6,24.4,IPK > 3.0,32,11,3,40.8,0
+MHS0420,Omar Padmasari,30,55,70.16,6,54.4,IPK 2.5–3.0,33,5,1,43.4,0
+MHS0421,Chandra Simbolon,27,25,56.86,8,12.0,IPK > 3.0,19,3,6,13.6,0
+MHS0422,Usyi Yuliarti,13,77,85.28,6,62.5,IPK 2.5–3.0,39,6,7,33.1,0
+MHS0423,Siska Hardiansyah,16,46,78.63,2,54.1,IPK 2.5–3.0,10,8,3,46.1,1
+MHS0424,Salwa Halim,5,63,53.24,0,75.3,IPK 2.5–3.0,16,13,3,19.4,0
+MHS0425,Caraka Fujiati,5,94,72.26,7,64.9,IPK 2.5–3.0,17,10,2,46.3,0
+MHS0426,Upik Yuniar,38,23,69.79,2,57.2,IPK < 2.5,33,9,5,78.3,0
+MHS0427,Muni Padmasari,36,64,60.06,7,70.5,IPK 2.5–3.0,23,9,6,56.5,0
+MHS0428,R. Omar Suryatmi,29,57,58.35,7,18.7,IPK 2.5–3.0,7,13,4,16.3,0
+MHS0429,Maria Narpati,44,91,57.18,4,61.6,IPK > 3.0,12,6,6,25.3,0
+MHS0430,Kasiyah Hassanah,49,16,70.86,0,21.4,IPK > 3.0,12,0,4,48.0,0
+MHS0431,Hani Pradana,5,83,62.12,9,92.9,IPK < 2.5,24,9,7,38.9,0
+MHS0432,"Balamantri Andriani, S.I.Kom",20,16,81.59,6,11.5,IPK > 3.0,8,8,4,38.7,0
+MHS0433,Jati Mahendra,43,42,73.48,9,45.9,IPK 2.5–3.0,25,12,1,52.3,0
+MHS0434,Ir. Ayu Rahmawati,9,32,43.5,4,71.1,IPK > 3.0,7,3,4,56.8,0
+MHS0435,Najam Sirait,26,94,72.01,7,48.5,IPK < 2.5,12,14,4,73.7,0
+MHS0436,"Narji Widiastuti, S.Kom",33,28,53.56,8,13.7,IPK > 3.0,27,2,2,37.3,0
+MHS0437,Ciaobella Puspita,7,28,69.64,6,57.6,IPK > 3.0,20,3,3,74.4,1
+MHS0438,"Ir. Kiandra Zulaika, S.Gz",16,45,74.01,6,66.0,IPK < 2.5,17,3,6,37.1,0
+MHS0439,"dr. Empluk Prabowo, M.TI.",30,38,51.54,0,71.9,IPK < 2.5,7,12,6,14.4,0
+MHS0440,Olga Agustina,20,69,62.84,3,40.5,IPK 2.5–3.0,13,9,7,54.3,0
+MHS0441,Jamil Mustofa,41,91,49.52,1,58.5,IPK > 3.0,18,10,7,57.0,0
+MHS0442,Kunthara Budiman,26,11,42.62,1,47.8,IPK 2.5–3.0,17,1,4,84.8,0
+MHS0443,Kairav Mahendra,33,10,58.92,1,68.8,IPK > 3.0,11,13,5,68.1,0
+MHS0444,Laras Samosir,18,56,58.15,3,60.4,IPK > 3.0,19,11,6,83.4,0
+MHS0445,"Tgk. Darman Laksmiwati, S.I.Kom",32,78,89.77,0,54.9,IPK 2.5–3.0,11,13,7,82.7,1
+MHS0446,Enteng Permadi,9,29,62.32,3,28.7,IPK > 3.0,38,0,4,58.4,0
+MHS0447,Rini Suryatmi,34,20,56.68,1,5.2,IPK > 3.0,26,11,7,52.2,0
+MHS0448,Dt. Bakiman Tampubolon,9,11,69.02,4,21.5,IPK > 3.0,28,9,1,54.6,1
+MHS0449,Himawan Purnawati,16,76,44.44,2,16.1,IPK < 2.5,5,11,1,88.3,1
+MHS0450,Almira Halimah,20,96,88.08,7,47.7,IPK 2.5–3.0,14,0,7,71.9,1
+MHS0451,Soleh Dongoran,30,21,71.75,3,63.2,IPK < 2.5,20,12,1,18.5,0
+MHS0452,Titin Yulianti,30,29,77.74,0,25.2,IPK 2.5–3.0,12,13,7,72.3,0
+MHS0453,Vivi Kuswandari,25,14,48.52,0,94.2,IPK 2.5–3.0,29,7,4,23.6,1
+MHS0454,"Yosef Suwarno, S.Gz",43,46,60.47,9,5.6,IPK > 3.0,16,13,2,45.8,0
+MHS0455,"Jaiman Ardianto, S.H.",40,47,61.13,2,78.4,IPK 2.5–3.0,29,1,5,26.8,1
+MHS0456,Padmi Mandasari,37,18,81.09,8,64.4,IPK < 2.5,21,11,4,65.2,0
+MHS0457,Dr. Perkasa Agustina,34,62,40.06,6,40.5,IPK < 2.5,30,9,2,80.2,0
+MHS0458,Artanto Rahmawati,41,53,55.04,1,9.8,IPK < 2.5,18,4,2,33.2,0
+MHS0459,Shakila Gunarto,27,95,89.06,8,64.6,IPK 2.5–3.0,27,11,6,16.6,0
+MHS0460,drg. Paris Safitri,14,33,63.74,9,41.6,IPK < 2.5,10,3,4,33.9,0
+MHS0461,Cindy Yulianti,9,90,59.13,1,93.9,IPK 2.5–3.0,9,7,4,63.8,0
+MHS0462,Citra Namaga,40,83,45.99,2,56.5,IPK < 2.5,29,1,7,36.3,0
+MHS0463,Shania Pradipta,38,39,88.71,9,94.3,IPK < 2.5,22,9,2,32.2,0
+MHS0464,Rangga Rahmawati,35,68,41.0,1,25.9,IPK 2.5–3.0,17,8,2,24.8,1
+MHS0465,"KH. Cahyo Hardiansyah, M.Pd",14,96,76.86,2,73.9,IPK < 2.5,18,6,2,49.8,1
+MHS0466,dr. Diana Suryatmi,23,90,78.43,5,63.6,IPK > 3.0,32,14,7,32.1,0
+MHS0467,Harja Rahimah,36,90,52.18,8,75.2,IPK 2.5–3.0,22,12,6,68.5,0
+MHS0468,Kardi Tamba,5,23,73.58,8,25.4,IPK 2.5–3.0,32,6,4,16.1,0
+MHS0469,Umi Namaga,9,18,44.65,6,68.2,IPK 2.5–3.0,31,0,2,63.1,0
+MHS0470,Ira Novitasari,49,49,52.85,2,52.3,IPK > 3.0,36,13,1,29.0,0
+MHS0471,Nyana Hutasoit,8,75,79.4,3,75.6,IPK 2.5–3.0,13,11,4,49.1,0
+MHS0472,Ratna Zulaika,20,34,83.23,5,36.1,IPK < 2.5,36,1,7,32.9,0
+MHS0473,Galang Winarno,28,82,70.42,4,89.6,IPK < 2.5,24,3,6,67.8,0
+MHS0474,"Ajiono Natsir, S.T.",20,31,65.34,1,13.0,IPK < 2.5,32,3,1,85.6,0
+MHS0475,Latif Zulaika,6,13,47.97,5,81.7,IPK 2.5–3.0,37,10,7,83.4,0
+MHS0476,R. Danang Maryati,32,35,43.16,2,86.8,IPK < 2.5,8,13,3,56.7,0
+MHS0477,Erik Wijayanti,36,67,45.88,7,82.6,IPK 2.5–3.0,38,2,4,47.0,0
+MHS0478,Dt. Joko Hutagalung,31,38,51.37,1,53.7,IPK < 2.5,7,6,3,75.5,0
+MHS0479,Rini Yolanda,24,96,57.08,0,46.6,IPK > 3.0,30,11,7,64.7,1
+MHS0480,"Dr. Ajeng Kurniawan, S.T.",28,46,59.05,8,99.6,IPK > 3.0,12,7,7,24.7,1
+MHS0481,Rahmi Puspita,16,84,57.32,2,26.8,IPK > 3.0,10,1,7,75.7,0
+MHS0482,Vero Melani,39,79,51.95,0,57.0,IPK > 3.0,20,3,2,44.3,0
+MHS0483,"Dipa Mangunsong, S.IP",37,27,65.49,6,68.7,IPK 2.5–3.0,28,13,6,25.1,0
+MHS0484,"Nova Winarsih, S.Pt",37,94,81.26,9,71.6,IPK < 2.5,34,2,2,32.5,0
+MHS0485,"Sakura Marbun, M.M.",47,51,53.99,4,24.4,IPK > 3.0,17,1,6,31.4,0
+MHS0486,Laila Suryatmi,41,50,87.12,4,67.1,IPK 2.5–3.0,9,11,5,51.5,0
+MHS0487,Gandi Palastri,16,47,83.67,0,82.7,IPK > 3.0,29,12,2,28.7,1
+MHS0488,Paramita Suartini,7,43,48.09,8,9.8,IPK > 3.0,24,13,3,19.9,0
+MHS0489,Jail Narpati,5,26,79.31,6,91.6,IPK 2.5–3.0,22,5,6,19.9,0
+MHS0490,Humaira Puspasari,37,46,68.73,7,7.8,IPK 2.5–3.0,22,12,2,56.7,1
+MHS0491,Uda Hidayat,44,34,68.33,8,38.8,IPK < 2.5,6,3,4,68.8,0
+MHS0492,"Ir. Nadia Najmudin, S.Pt",14,85,59.55,5,6.5,IPK < 2.5,14,5,7,35.7,0
+MHS0493,"Sarah Siregar, S.Sos",47,96,65.06,4,12.3,IPK > 3.0,16,1,6,12.8,0
+MHS0494,Ratna Permadi,48,95,59.86,5,91.6,IPK > 3.0,17,11,6,20.2,0
+MHS0495,Kayla Widiastuti,33,94,66.99,1,38.7,IPK < 2.5,15,3,2,83.2,0
+MHS0496,Rosman Hidayanto,17,36,71.4,3,45.4,IPK < 2.5,23,10,5,49.5,0
+MHS0497,KH. Kardi Rajata,16,66,73.72,2,25.5,IPK 2.5–3.0,39,5,2,46.3,0
+MHS0498,"KH. Johan Yuliarti, S.I.Kom",35,40,66.62,6,61.7,IPK < 2.5,30,13,3,13.0,0
+MHS0499,Ulya Nainggolan,6,15,76.07,8,61.5,IPK < 2.5,18,4,3,68.3,0
+MHS0500,"Kasusra Wahyudin, M.Kom.",39,49,47.06,4,40.4,IPK > 3.0,28,2,6,52.2,0
+MHS0501,KH. Martani Prasasta,27,21,50.6,5,36.6,IPK < 2.5,5,7,6,26.2,1
+MHS0502,Saiful Prasetyo,21,62,80.94,9,89.1,IPK > 3.0,26,6,2,18.8,1
+MHS0503,Puti Nabila Permata,30,80,56.13,1,41.4,IPK < 2.5,27,2,3,40.7,0
+MHS0504,Hj. Usyi Usamah,12,19,41.14,2,51.9,IPK 2.5–3.0,23,5,3,77.0,1
+MHS0505,"dr. Ulva Mansur, S.Ked",33,54,47.69,2,31.9,IPK < 2.5,22,3,5,79.2,0
+MHS0506,"Kamaria Wibowo, S.Pt",30,26,51.18,8,79.7,IPK < 2.5,16,10,4,58.2,0
+MHS0507,Anggabaya Farida,14,35,87.87,6,42.8,IPK < 2.5,32,4,5,68.2,0
+MHS0508,"Tgk. Galiono Maheswara, M.Ak",30,94,68.65,7,53.8,IPK > 3.0,32,10,1,19.2,0
+MHS0509,"R.A. Puput Hutasoit, S.Pd",38,71,86.64,9,29.1,IPK 2.5–3.0,37,4,7,57.1,0
+MHS0510,Martani Safitri,45,55,68.76,8,98.8,IPK < 2.5,23,6,5,63.4,0
+MHS0511,Dina Prakasa,11,73,63.97,5,32.7,IPK > 3.0,32,10,2,26.1,1
+MHS0512,Ciaobella Padmasari,8,11,55.69,3,78.2,IPK 2.5–3.0,30,4,4,80.4,1
+MHS0513,Umar Wacana,49,63,70.32,0,45.6,IPK > 3.0,39,10,2,25.6,0
+MHS0514,Gilang Prasetyo,15,74,46.96,7,24.6,IPK > 3.0,38,14,7,35.1,0
+MHS0515,Zulfa Winarno,33,60,84.91,6,81.0,IPK 2.5–3.0,39,2,1,59.6,1
+MHS0516,dr. Elvin Winarsih,40,62,81.47,1,36.7,IPK < 2.5,20,9,4,61.1,0
+MHS0517,Tgk. Febi Pangestu,29,45,55.88,7,87.2,IPK > 3.0,17,4,6,66.0,0
+MHS0518,"Citra Laksita, S.IP",25,35,87.64,4,91.9,IPK > 3.0,27,6,3,19.0,0
+MHS0519,Victoria Fujiati,40,38,81.26,6,86.7,IPK < 2.5,26,4,5,78.0,0
+MHS0520,Jane Tampubolon,14,30,73.32,3,8.3,IPK < 2.5,20,4,2,52.6,0
+MHS0521,Eli Purnawati,41,20,46.09,4,79.8,IPK 2.5–3.0,32,8,1,47.7,1
+MHS0522,Prayogo Pranowo,13,49,63.91,7,44.1,IPK 2.5–3.0,39,14,3,88.5,0
+MHS0523,Dina Pertiwi,28,20,65.31,0,88.0,IPK 2.5–3.0,12,2,5,69.2,0
+MHS0524,Diah Zulaika,39,45,51.63,0,65.6,IPK < 2.5,26,12,3,19.4,0
+MHS0525,Elon Nuraini,39,68,44.0,3,84.2,IPK > 3.0,25,5,5,70.5,0
+MHS0526,"dr. Salman Siregar, M.Kom.",40,48,78.84,2,52.4,IPK > 3.0,30,0,6,17.6,0
+MHS0527,Gatot Suryatmi,22,63,46.1,9,55.8,IPK 2.5–3.0,25,9,4,12.2,0
+MHS0528,Tantri Wastuti,43,64,69.71,1,18.7,IPK < 2.5,29,4,3,42.3,0
+MHS0529,Cakrawangsa Latupono,36,33,86.82,2,79.5,IPK > 3.0,5,7,3,89.5,0
+MHS0530,Puji Laksmiwati,28,31,83.81,0,44.8,IPK 2.5–3.0,10,4,3,24.0,0
+MHS0531,Mutia Nashiruddin,27,78,53.89,0,52.5,IPK > 3.0,27,8,4,63.8,0
+MHS0532,"Hj. Titin Utama, S.Gz",36,65,82.57,5,79.6,IPK > 3.0,27,10,1,23.9,0
+MHS0533,Mutia Namaga,41,42,40.02,4,61.9,IPK < 2.5,27,5,5,68.0,0
+MHS0534,Puti Ayu Maulana,16,45,40.88,7,24.1,IPK < 2.5,36,7,6,50.4,0
+MHS0535,Kania Kusumo,17,29,70.13,1,61.1,IPK > 3.0,34,9,3,64.4,0
+MHS0536,Najib Susanti,27,92,58.24,3,43.7,IPK 2.5–3.0,17,7,7,26.2,0
+MHS0537,Cinthia Pangestu,29,90,59.32,7,49.6,IPK < 2.5,22,12,4,69.7,0
+MHS0538,Citra Napitupulu,39,71,68.22,5,7.7,IPK > 3.0,27,2,1,89.6,1
+MHS0539,Hasta Prabowo,45,82,49.59,0,25.0,IPK < 2.5,19,6,5,63.3,1
+MHS0540,Dr. Intan Sitorus,34,35,50.59,3,31.7,IPK < 2.5,37,13,4,49.5,0
+MHS0541,Sutan Daliono Pudjiastuti,21,75,64.23,0,72.7,IPK < 2.5,25,6,6,83.9,0
+MHS0542,Hj. Endah Hutagalung,24,82,77.71,1,6.1,IPK > 3.0,27,13,6,11.3,0
+MHS0543,Aisyah Utama,29,82,70.97,4,43.8,IPK 2.5–3.0,31,9,5,68.4,0
+MHS0544,Zalindra Mandasari,26,49,54.87,7,92.8,IPK 2.5–3.0,22,11,3,81.1,1
+MHS0545,"Aswani Haryanti, S.T.",17,26,61.52,7,15.6,IPK 2.5–3.0,28,5,6,14.9,0
+MHS0546,Lasmono Budiyanto,23,10,48.53,2,54.1,IPK < 2.5,11,11,1,46.0,0
+MHS0547,Anastasia Widiastuti,40,98,43.73,3,79.7,IPK > 3.0,24,6,4,26.4,1
+MHS0548,Olivia Tampubolon,16,70,79.13,9,94.5,IPK < 2.5,31,13,1,55.3,0
+MHS0549,"Dr. Cici Hardiansyah, M.TI.",45,52,53.27,5,75.9,IPK 2.5–3.0,10,1,3,62.0,0
+MHS0550,"R. Jono Wibowo, M.Kom.",23,51,48.89,9,73.5,IPK 2.5–3.0,31,8,1,34.2,0
+MHS0551,"Prayitna Ramadan, S.Kom",16,34,74.58,2,83.5,IPK > 3.0,13,9,1,46.8,0
+MHS0552,"Drs. Kasusra Pranowo, S.Ked",13,48,70.9,1,47.4,IPK < 2.5,35,9,2,32.3,0
+MHS0553,Galih Wasita,11,44,71.66,5,81.6,IPK 2.5–3.0,25,0,1,39.6,0
+MHS0554,Eli Pratiwi,32,12,51.44,4,5.8,IPK > 3.0,30,0,5,22.8,0
+MHS0555,Ani Hutasoit,18,53,51.63,9,92.8,IPK < 2.5,17,2,4,80.8,1
+MHS0556,Tirta Padmasari,35,60,51.04,4,47.1,IPK < 2.5,27,13,2,10.8,0
+MHS0557,Titin Kusmawati,23,21,48.69,9,57.6,IPK 2.5–3.0,24,14,4,80.6,0
+MHS0558,"Mujur Kuswandari, S.T.",20,28,72.79,4,29.2,IPK 2.5–3.0,32,2,4,55.7,0
+MHS0559,Dian Lazuardi,9,53,82.4,9,75.5,IPK < 2.5,21,0,3,36.5,0
+MHS0560,Daru Namaga,39,68,76.22,4,12.3,IPK < 2.5,32,11,3,67.8,0
+MHS0561,Hilda Prabowo,16,58,79.6,2,87.9,IPK 2.5–3.0,6,6,2,50.6,0
+MHS0562,"Dr. Keisha Kurniawan, M.Pd",29,70,60.24,6,83.7,IPK < 2.5,29,3,6,49.9,1
+MHS0563,Padma Safitri,25,26,72.7,5,25.5,IPK 2.5–3.0,10,9,7,18.8,0
+MHS0564,"Tgk. Luis Prasetya, M.TI.",40,83,57.71,3,81.9,IPK < 2.5,15,12,3,41.2,0
+MHS0565,Umar Uyainah,27,66,66.28,1,79.7,IPK 2.5–3.0,10,1,7,29.3,0
+MHS0566,Laksana Utama,20,64,64.08,8,65.1,IPK > 3.0,15,9,3,11.3,0
+MHS0567,Purwanto Ramadan,43,56,48.84,0,40.5,IPK 2.5–3.0,18,4,3,38.8,0
+MHS0568,Wasis Suryono,49,21,59.35,3,30.8,IPK 2.5–3.0,6,5,4,17.2,0
+MHS0569,"dr. Carub Astuti, M.Kom.",46,71,88.19,0,27.0,IPK > 3.0,7,8,2,30.5,0
+MHS0570,"Tugiman Marbun, M.Pd",43,89,52.43,5,35.3,IPK < 2.5,39,3,4,17.4,0
+MHS0571,Jagaraga Irawan,18,97,46.69,3,90.8,IPK > 3.0,37,1,5,18.1,0
+MHS0572,Bakiman Sihotang,35,92,60.93,4,12.4,IPK 2.5–3.0,28,4,4,25.9,0
+MHS0573,Gaduh Sitorus,9,17,79.52,4,83.7,IPK < 2.5,23,2,7,90.0,0
+MHS0574,Putri Prastuti,39,30,69.11,8,38.1,IPK > 3.0,22,1,7,10.2,0
+MHS0575,Siska Pangestu,27,90,74.05,0,54.6,IPK < 2.5,28,11,5,61.1,0
+MHS0576,"Eko Pertiwi, M.Kom.",33,96,49.48,1,80.5,IPK < 2.5,39,0,1,21.3,1
+MHS0577,Chelsea Puspasari,47,89,70.95,5,89.0,IPK > 3.0,5,9,1,83.7,0
+MHS0578,Puspa Thamrin,15,79,56.18,4,37.8,IPK < 2.5,29,1,5,17.5,0
+MHS0579,"Tgk. Daliman Siregar, M.Farm",22,81,81.72,6,48.9,IPK > 3.0,38,5,5,86.4,1
+MHS0580,R. Cecep Samosir,16,34,71.46,2,44.4,IPK 2.5–3.0,29,7,4,58.9,1
+MHS0581,Wardi Yuliarti,13,91,49.94,2,6.3,IPK < 2.5,20,12,5,10.1,0
+MHS0582,Elvina Wahyuni,14,98,43.23,9,33.1,IPK 2.5–3.0,38,2,2,81.5,0
+MHS0583,Laswi Rahmawati,48,21,42.13,1,48.6,IPK 2.5–3.0,33,10,1,51.7,1
+MHS0584,Warsita Kusmawati,21,24,58.57,2,44.1,IPK < 2.5,23,14,1,31.0,1
+MHS0585,Sakura Palastri,42,68,53.29,9,73.6,IPK > 3.0,27,8,6,71.4,0
+MHS0586,Virman Setiawan,11,35,72.3,0,41.6,IPK < 2.5,23,14,5,84.1,1
+MHS0587,Prabu Susanti,17,35,64.97,4,51.5,IPK 2.5–3.0,29,11,3,48.7,0
+MHS0588,T. Kasiran Tamba,44,56,53.3,4,45.8,IPK 2.5–3.0,20,8,3,35.2,0
+MHS0589,Muni Wijayanti,46,41,47.46,6,75.4,IPK > 3.0,13,1,5,73.1,0
+MHS0590,"Dt. Kalim Santoso, S.E.I",13,19,46.36,3,87.0,IPK < 2.5,5,7,2,64.5,0
+MHS0591,Chandra Pratiwi,31,25,83.23,2,55.5,IPK 2.5–3.0,23,9,3,81.1,0
+MHS0592,"Citra Januar, S.I.Kom",6,80,52.17,0,80.0,IPK 2.5–3.0,37,10,6,65.4,0
+MHS0593,Ir. Devi Wibisono,9,26,72.59,7,33.2,IPK 2.5–3.0,38,11,7,29.5,0
+MHS0594,"Cut Vicky Prasetyo, S.Pt",33,32,80.53,2,56.4,IPK > 3.0,20,4,5,84.5,1
+MHS0595,"Yulia Hutasoit, S.IP",41,35,70.7,1,37.8,IPK 2.5–3.0,22,3,2,18.4,0
+MHS0596,Eko Riyanti,42,94,82.98,3,44.3,IPK 2.5–3.0,38,9,2,31.4,0
+MHS0597,Dr. Sabrina Wijaya,23,95,59.62,2,74.6,IPK < 2.5,29,4,4,51.6,1
+MHS0598,Gantar Irawan,12,16,87.81,0,88.8,IPK < 2.5,10,3,2,55.3,1
+MHS0599,Maida Natsir,49,23,46.66,2,16.5,IPK 2.5–3.0,25,7,3,11.2,0
+MHS0600,Dr. Dwi Fujiati,5,88,45.11,1,65.3,IPK 2.5–3.0,10,3,7,72.4,0
+MHS0601,Tomi Utama,26,16,72.93,7,60.3,IPK < 2.5,36,12,3,38.9,0
+MHS0602,"Tantri Prastuti, M.Ak",21,18,87.14,5,16.2,IPK > 3.0,35,9,5,42.5,0
+MHS0603,Prayogo Pradana,11,57,80.44,8,25.1,IPK > 3.0,14,11,7,74.7,0
+MHS0604,Estiono Maulana,29,81,43.82,7,34.5,IPK > 3.0,34,12,5,40.3,0
+MHS0605,Zalindra Laksita,49,68,53.97,9,20.9,IPK > 3.0,22,13,2,13.8,0
+MHS0606,"Mila Kuswoyo, M.M.",8,96,86.52,2,28.2,IPK > 3.0,28,5,6,24.1,1
+MHS0607,"Ir. Mursinin Firmansyah, S.E.I",40,91,52.65,4,30.4,IPK > 3.0,13,1,1,86.5,0
+MHS0608,Putu Utami,10,48,79.06,6,36.9,IPK > 3.0,35,4,7,15.6,0
+MHS0609,Ajeng Dongoran,35,27,81.26,4,76.2,IPK > 3.0,19,5,4,38.4,0
+MHS0610,Jono Prasasta,23,68,64.77,7,59.3,IPK < 2.5,8,4,1,50.3,0
+MHS0611,Waluyo Gunawan,48,26,59.32,4,98.7,IPK > 3.0,13,11,2,49.5,1
+MHS0612,dr. Maimunah Wijaya,43,23,62.51,0,44.4,IPK > 3.0,13,1,2,10.3,0
+MHS0613,Natalia Widodo,31,40,51.35,4,76.6,IPK > 3.0,30,13,1,50.1,1
+MHS0614,Omar Winarsih,14,33,84.47,3,87.8,IPK 2.5–3.0,8,6,4,40.7,0
+MHS0615,Bagya Hutapea,30,69,62.53,5,69.5,IPK < 2.5,21,3,7,87.8,0
+MHS0616,Pandu Sitorus,23,54,84.12,2,44.1,IPK < 2.5,20,7,7,22.7,0
+MHS0617,Jamal Sitompul,43,12,45.28,4,76.6,IPK < 2.5,19,6,1,38.3,1
+MHS0618,Unggul Anggraini,7,46,89.41,1,24.3,IPK > 3.0,39,6,5,43.6,0
+MHS0619,"drg. Hari Mustofa, S.Pd",49,52,62.16,5,36.1,IPK > 3.0,9,8,3,41.3,0
+MHS0620,Dalima Saefullah,17,49,42.39,5,56.9,IPK 2.5–3.0,9,0,6,63.3,0
+MHS0621,"Elma Siregar, S.Gz",32,99,41.9,4,59.7,IPK < 2.5,24,9,5,27.2,0
+MHS0622,"Ir. Violet Budiyanto, S.I.Kom",24,64,77.31,5,7.1,IPK > 3.0,19,5,7,27.7,0
+MHS0623,Luwar Yuliarti,32,96,72.95,6,94.8,IPK < 2.5,22,5,3,68.3,0
+MHS0624,Ajiono Kuswandari,12,48,80.11,4,71.2,IPK 2.5–3.0,6,5,6,50.0,0
+MHS0625,Puti Yuni Mardhiyah,45,24,45.27,0,52.1,IPK 2.5–3.0,33,12,6,43.2,0
+MHS0626,"dr. Anom Agustina, S.Ked",43,13,41.78,7,93.6,IPK 2.5–3.0,17,11,6,23.5,0
+MHS0627,Elvina Hastuti,5,95,65.43,3,46.7,IPK < 2.5,8,5,2,25.0,0
+MHS0628,"Uchita Wijayanti, M.Ak",7,34,59.38,8,98.1,IPK > 3.0,14,11,6,10.8,0
+MHS0629,"Ir. Eka Narpati, S.H.",17,22,63.1,9,53.7,IPK > 3.0,35,9,4,17.3,1
+MHS0630,"Jagapati Maryati, S.Ked",32,91,89.58,5,15.9,IPK 2.5–3.0,12,6,1,54.5,0
+MHS0631,Bahuwirya Siregar,29,42,88.54,0,77.7,IPK > 3.0,7,13,7,81.3,0
+MHS0632,Cut Rachel Kurniawan,37,25,87.12,2,69.5,IPK 2.5–3.0,13,9,4,33.0,0
+MHS0633,Samiah Handayani,42,51,79.19,2,78.4,IPK < 2.5,34,5,1,36.2,0
+MHS0634,Jaga Budiman,10,75,57.74,9,95.4,IPK 2.5–3.0,15,0,5,19.2,0
+MHS0635,"Dr. Calista Mansur, M.Kom.",48,64,60.61,3,78.8,IPK < 2.5,39,2,5,41.1,0
+MHS0636,Dalima Wibisono,49,51,67.48,5,63.1,IPK 2.5–3.0,17,1,1,13.0,0
+MHS0637,"Lidya Anggraini, M.Farm",36,43,81.53,6,86.4,IPK > 3.0,17,5,4,83.4,0
+MHS0638,Maida Jailani,49,39,43.44,9,69.0,IPK > 3.0,16,7,1,63.8,0
+MHS0639,Cut Elma Safitri,25,22,61.21,3,43.8,IPK 2.5–3.0,14,2,6,89.3,1
+MHS0640,Marsito Gunarto,20,22,44.13,5,89.1,IPK > 3.0,13,9,2,80.6,1
+MHS0641,Umi Pratama,25,27,65.73,0,26.1,IPK > 3.0,11,7,7,47.8,0
+MHS0642,Dian Kuswoyo,15,41,84.95,7,72.9,IPK > 3.0,6,7,5,51.6,0
+MHS0643,Tgk. Praba Tampubolon,41,48,79.12,6,88.7,IPK < 2.5,27,4,7,25.2,0
+MHS0644,Balamantri Hardiansyah,40,55,51.39,8,74.5,IPK > 3.0,25,7,2,47.0,1
+MHS0645,"Wardi Riyanti, M.Pd",39,38,88.8,2,71.2,IPK < 2.5,27,5,6,82.2,0
+MHS0646,Dt. Prayitna Wacana,23,71,73.37,1,76.5,IPK 2.5–3.0,33,4,6,14.1,0
+MHS0647,Maimunah Tarihoran,24,71,40.52,0,49.2,IPK > 3.0,18,8,5,79.1,0
+MHS0648,Lantar Siregar,22,66,52.77,2,88.0,IPK > 3.0,30,13,5,37.3,1
+MHS0649,Wira Jailani,45,25,53.04,4,24.3,IPK > 3.0,9,6,6,82.0,0
+MHS0650,Uli Irawan,18,65,43.46,1,17.1,IPK 2.5–3.0,35,7,3,85.3,0
+MHS0651,Atma Najmudin,19,19,87.99,2,32.1,IPK < 2.5,29,0,7,63.7,0
+MHS0652,Usyi Yuniar,35,39,63.91,3,55.5,IPK < 2.5,35,10,2,63.2,0
+MHS0653,"dr. Raihan Haryanto, M.TI.",5,34,84.79,6,53.5,IPK > 3.0,24,1,7,46.2,1
+MHS0654,"Dt. Dimas Suryatmi, M.Pd",7,93,56.11,2,83.0,IPK 2.5–3.0,21,7,2,76.8,0
+MHS0655,Agnes Hasanah,20,14,46.26,8,43.4,IPK 2.5–3.0,6,11,3,86.9,0
+MHS0656,"Hj. Ulva Pertiwi, M.Ak",27,74,63.72,7,51.0,IPK 2.5–3.0,29,8,4,72.0,0
+MHS0657,Jaga Purnawati,15,58,45.7,3,6.3,IPK 2.5–3.0,17,3,2,59.8,1
+MHS0658,T. Omar Latupono,16,12,64.3,0,43.9,IPK 2.5–3.0,32,11,7,58.5,0
+MHS0659,Prabawa Sitompul,14,54,86.01,0,66.5,IPK < 2.5,10,9,1,78.0,0
+MHS0660,Jaeman Anggraini,36,23,66.04,0,6.5,IPK < 2.5,7,10,6,53.3,0
+MHS0661,Ulva Ardianto,20,39,70.82,0,31.7,IPK < 2.5,39,9,6,74.3,0
+MHS0662,Rahayu Permadi,12,77,47.83,7,24.8,IPK > 3.0,22,13,3,50.7,1
+MHS0663,R. Purwanto Hassanah,42,27,42.19,2,9.0,IPK 2.5–3.0,15,8,2,15.0,0
+MHS0664,Emil Saputra,16,71,45.54,5,50.5,IPK > 3.0,24,3,4,40.7,0
+MHS0665,Oliva Tarihoran,28,46,69.93,2,22.3,IPK 2.5–3.0,9,9,2,45.6,0
+MHS0666,Rina Utama,32,34,44.75,4,75.6,IPK < 2.5,23,9,6,21.3,0
+MHS0667,Pia Ardianto,12,57,58.8,6,85.6,IPK > 3.0,26,9,5,18.2,0
+MHS0668,Hafshah Hardiansyah,32,74,67.5,1,56.8,IPK < 2.5,23,8,1,52.8,0
+MHS0669,Jamalia Damanik,40,62,59.43,5,98.3,IPK 2.5–3.0,20,10,3,16.8,0
+MHS0670,"Ir. Garan Jailani, S.E.",30,88,48.18,5,47.8,IPK 2.5–3.0,28,6,5,34.2,0
+MHS0671,Mursinin Marbun,12,82,53.69,2,53.8,IPK 2.5–3.0,8,1,7,69.6,0
+MHS0672,Cakrabuana Prasasta,32,24,86.42,5,99.0,IPK < 2.5,19,8,4,87.2,0
+MHS0673,Endah Gunawan,32,58,73.8,9,27.0,IPK 2.5–3.0,29,3,5,67.4,0
+MHS0674,Ulva Winarsih,41,97,64.8,9,94.5,IPK < 2.5,39,7,7,89.4,0
+MHS0675,"Edi Anggraini, S.Sos",45,77,40.64,4,9.1,IPK > 3.0,18,13,5,65.9,0
+MHS0676,Dt. Daliono Sihombing,40,21,89.62,1,47.4,IPK 2.5–3.0,23,6,4,33.5,0
+MHS0677,Azalea Yolanda,31,68,73.57,8,11.7,IPK 2.5–3.0,11,12,5,63.8,0
+MHS0678,Sadina Pertiwi,21,46,55.85,7,74.3,IPK 2.5–3.0,34,14,3,66.2,0
+MHS0679,Oliva Siregar,13,70,83.96,2,62.8,IPK > 3.0,23,6,6,39.7,0
+MHS0680,"Dalima Narpati, M.Farm",37,52,52.92,7,72.1,IPK 2.5–3.0,29,7,2,11.4,1
+MHS0681,"Wasis Hassanah, M.Ak",24,79,67.2,8,40.6,IPK < 2.5,20,0,5,66.3,0
+MHS0682,Elisa Nuraini,17,48,71.8,2,40.1,IPK < 2.5,12,4,3,11.7,1
+MHS0683,"R. Zizi Wibowo, S.Farm",32,65,51.05,2,9.3,IPK 2.5–3.0,22,1,2,60.5,0
+MHS0684,Jane Haryanto,33,72,88.92,1,38.2,IPK 2.5–3.0,32,1,7,23.1,0
+MHS0685,"Ozy Pudjiastuti, M.Farm",17,55,77.41,7,93.3,IPK > 3.0,20,14,2,55.2,0
+MHS0686,Cinthia Novitasari,39,97,67.89,9,41.0,IPK > 3.0,23,0,7,50.3,1
+MHS0687,"Luwes Hariyah, S.T.",10,20,49.03,0,84.0,IPK > 3.0,21,4,5,11.1,0
+MHS0688,Diana Handayani,22,71,42.69,7,85.0,IPK 2.5–3.0,17,1,3,39.0,1
+MHS0689,"Ir. Talia Laksita, S.Gz",9,86,56.0,6,40.5,IPK > 3.0,11,3,6,58.1,0
+MHS0690,"Ihsan Widiastuti, S.Ked",29,34,77.66,6,65.0,IPK > 3.0,31,2,5,77.9,0
+MHS0691,"Ir. Uchita Anggraini, M.Pd",6,80,53.47,2,14.1,IPK < 2.5,14,2,7,81.1,0
+MHS0692,Umaya Laksmiwati,14,61,66.98,0,14.8,IPK > 3.0,38,1,4,48.7,0
+MHS0693,dr. Caturangga Susanti,34,13,76.4,3,9.6,IPK < 2.5,29,12,2,68.3,1
+MHS0694,Drs. Alika Nasyiah,49,68,45.4,8,60.2,IPK < 2.5,10,5,5,35.3,0
+MHS0695,Talia Wibisono,9,81,74.26,4,45.5,IPK > 3.0,28,1,7,37.4,1
+MHS0696,Panji Kusumo,37,29,44.59,0,57.1,IPK < 2.5,22,13,2,25.6,0
+MHS0697,Irsad Winarno,5,72,88.26,4,54.5,IPK 2.5–3.0,27,13,7,55.0,1
+MHS0698,"Dr. Harja Astuti, S.Gz",22,63,64.42,7,38.3,IPK 2.5–3.0,10,7,3,35.2,0
+MHS0699,Paramita Susanti,36,83,47.53,7,69.4,IPK > 3.0,33,7,1,16.7,0
+MHS0700,Puput Safitri,15,66,57.12,4,77.1,IPK 2.5–3.0,29,12,5,64.8,0
+MHS0701,"drg. Umaya Mangunsong, S.Gz",25,99,60.67,8,6.4,IPK < 2.5,21,13,6,66.6,0
+MHS0702,Malik Nainggolan,30,50,77.91,0,24.7,IPK 2.5–3.0,28,11,5,38.8,0
+MHS0703,Najam Wasita,29,12,77.17,3,72.8,IPK > 3.0,15,4,2,16.1,1
+MHS0704,Ajiman Mandasari,26,15,70.6,2,41.7,IPK > 3.0,30,9,3,44.1,0
+MHS0705,drg. Kemal Pudjiastuti,31,14,45.3,1,67.9,IPK < 2.5,38,6,7,45.4,0
+MHS0706,Bagas Prasetyo,17,14,47.58,7,38.0,IPK > 3.0,32,3,4,63.5,0
+MHS0707,Rahmi Anggraini,37,63,44.69,6,42.1,IPK 2.5–3.0,7,0,6,35.2,0
+MHS0708,Salman Firgantoro,38,56,68.86,8,20.1,IPK > 3.0,15,10,3,64.6,0
+MHS0709,"Sutan Maryadi Pranowo, S.Farm",45,96,83.86,1,29.5,IPK < 2.5,18,1,5,79.7,0
+MHS0710,Kusuma Suryono,39,58,61.69,3,62.5,IPK > 3.0,30,9,4,29.0,0
+MHS0711,"drg. Jasmin Mandala, S.I.Kom",5,18,48.04,5,46.2,IPK 2.5–3.0,25,9,3,88.3,0
+MHS0712,Chelsea Budiyanto,25,29,67.9,2,78.6,IPK < 2.5,34,3,1,40.9,1
+MHS0713,Jane Nurdiyanti,10,70,80.59,7,86.0,IPK 2.5–3.0,12,0,6,31.4,0
+MHS0714,"Baktianto Santoso, M.Farm",32,44,77.09,2,56.5,IPK < 2.5,24,14,2,43.7,0
+MHS0715,Paris Purwanti,21,59,84.07,1,77.0,IPK > 3.0,36,12,3,17.6,0
+MHS0716,Yuni Gunarto,9,91,53.9,2,34.2,IPK < 2.5,26,7,3,20.1,0
+MHS0717,"Darsirah Nababan, S.I.Kom",35,71,49.7,5,44.4,IPK < 2.5,11,8,1,43.2,1
+MHS0718,Farhunnisa Budiyanto,9,26,83.99,1,72.7,IPK > 3.0,13,3,5,71.0,0
+MHS0719,"Puti Rika Nurdiyanti, S.Sos",42,97,72.88,7,41.7,IPK 2.5–3.0,5,9,7,82.0,0
+MHS0720,dr. Uchita Yolanda,7,12,55.55,0,60.9,IPK > 3.0,33,2,7,63.2,0
+MHS0721,Cinta Lestari,27,41,77.12,6,22.6,IPK < 2.5,12,1,6,18.4,0
+MHS0722,Mursita Tampubolon,41,22,80.76,1,62.0,IPK > 3.0,8,4,6,63.8,0
+MHS0723,Ciaobella Megantara,41,98,70.75,9,86.8,IPK < 2.5,39,13,2,60.8,0
+MHS0724,"Dr. Pia Prasasta, S.Kom",14,82,74.39,5,87.5,IPK > 3.0,7,2,3,74.5,0
+MHS0725,Irma Hariyah,14,77,58.76,1,73.8,IPK > 3.0,11,9,4,76.0,0
+MHS0726,Tedi Nasyiah,23,23,66.93,1,75.8,IPK 2.5–3.0,31,6,3,79.5,0
+MHS0727,Liman Mangunsong,21,20,66.21,9,58.0,IPK < 2.5,5,10,7,43.1,0
+MHS0728,"Nugraha Wahyuni, S.IP",25,65,82.4,7,60.5,IPK 2.5–3.0,31,5,2,65.8,0
+MHS0729,Muni Budiman,18,76,82.0,1,17.7,IPK < 2.5,20,0,3,31.5,1
+MHS0730,Alika Hutapea,13,38,81.63,6,47.2,IPK > 3.0,11,11,1,89.9,0
+MHS0731,Gabriella Yolanda,5,18,40.55,2,47.8,IPK < 2.5,27,7,7,24.0,0
+MHS0732,Puti Gabriella Anggriawan,49,76,77.48,7,96.1,IPK 2.5–3.0,15,1,3,10.8,0
+MHS0733,Cemplunk Safitri,17,34,77.93,6,46.0,IPK 2.5–3.0,37,4,3,21.9,0
+MHS0734,Laras Farida,8,85,73.92,7,57.2,IPK 2.5–3.0,21,8,7,72.1,0
+MHS0735,R.M. Nardi Utama,5,51,77.81,6,55.7,IPK < 2.5,39,7,4,45.7,1
+MHS0736,"Cut Siska Dabukke, S.Farm",44,18,82.1,5,65.5,IPK 2.5–3.0,9,1,7,45.8,0
+MHS0737,Dr. Karen Suartini,36,88,63.52,6,76.1,IPK 2.5–3.0,36,8,1,86.4,0
+MHS0738,Tgk. Cengkir Rahmawati,38,49,65.1,4,26.4,IPK 2.5–3.0,7,4,1,83.6,0
+MHS0739,Ir. Garda Puspasari,32,34,46.24,6,55.2,IPK > 3.0,39,9,3,34.9,0
+MHS0740,"Keisha Saputra, M.Ak",35,14,59.27,0,83.5,IPK > 3.0,18,13,6,26.7,0
+MHS0741,Dt. Daliman Kuswandari,12,20,72.17,0,49.0,IPK < 2.5,35,5,4,77.9,0
+MHS0742,Ibrahim Zulkarnain,43,68,79.02,8,31.5,IPK < 2.5,35,12,3,82.5,0
+MHS0743,"Cut Juli Suryatmi, M.Ak",30,97,50.86,4,67.2,IPK 2.5–3.0,21,2,7,53.3,1
+MHS0744,Hartana Tamba,38,88,46.89,4,83.3,IPK > 3.0,28,12,3,60.4,0
+MHS0745,Maida Suryatmi,7,47,73.15,2,11.0,IPK 2.5–3.0,27,2,2,30.6,0
+MHS0746,Atma Yuniar,16,81,40.09,4,78.8,IPK 2.5–3.0,22,9,2,74.1,0
+MHS0747,Luis Halim,5,14,48.92,2,83.1,IPK > 3.0,18,7,6,60.6,0
+MHS0748,"Tgk. Ellis Mardhiyah, M.Kom.",48,57,41.45,8,48.8,IPK > 3.0,19,10,4,50.3,0
+MHS0749,Wulan Mangunsong,9,99,48.34,8,98.4,IPK > 3.0,19,9,5,14.8,0
+MHS0750,Amalia Wasita,34,27,49.07,5,79.7,IPK < 2.5,10,9,2,83.3,1
+MHS0751,Pangeran Rajata,34,79,59.38,0,78.5,IPK < 2.5,31,14,5,59.2,0
+MHS0752,R.A. Ilsa Purnawati,21,46,60.12,6,76.0,IPK 2.5–3.0,19,11,1,25.4,0
+MHS0753,"Dr. Makara Adriansyah, M.M.",27,69,83.71,6,19.3,IPK < 2.5,12,1,2,58.5,0
+MHS0754,Julia Sirait,19,57,65.51,9,25.6,IPK > 3.0,19,10,2,64.2,0
+MHS0755,"Endra Siregar, M.Kom.",41,86,76.17,9,49.1,IPK > 3.0,7,11,4,52.1,1
+MHS0756,Nurul Hardiansyah,25,37,45.21,3,30.1,IPK < 2.5,17,11,6,67.4,1
+MHS0757,Hj. Diana Saragih,18,78,51.27,7,44.4,IPK 2.5–3.0,38,1,5,56.5,0
+MHS0758,Clara Utami,6,86,75.15,5,89.4,IPK 2.5–3.0,28,12,7,85.8,0
+MHS0759,Harjasa Tarihoran,15,90,42.64,3,83.3,IPK < 2.5,36,4,2,14.3,1
+MHS0760,Julia Kuswandari,43,49,64.33,3,64.9,IPK 2.5–3.0,36,5,2,18.5,0
+MHS0761,Vega Yuliarti,42,54,69.97,1,86.5,IPK 2.5–3.0,34,11,4,23.9,0
+MHS0762,Chelsea Gunarto,38,71,70.11,1,79.5,IPK 2.5–3.0,17,1,4,65.2,0
+MHS0763,Cakrawala Mardhiyah,42,67,41.15,3,45.8,IPK > 3.0,5,14,6,61.6,0
+MHS0764,Farhunnisa Riyanti,38,76,56.11,4,24.1,IPK > 3.0,38,4,5,81.4,0
+MHS0765,Balangga Damanik,22,65,71.82,7,53.8,IPK < 2.5,19,6,1,68.6,0
+MHS0766,"H. Tedi Lestari, M.Farm",34,49,47.45,5,74.9,IPK > 3.0,18,9,7,50.7,0
+MHS0767,Wisnu Permadi,19,49,74.77,3,46.5,IPK 2.5–3.0,33,9,6,89.3,0
+MHS0768,Iriana Widodo,31,86,77.3,6,68.3,IPK > 3.0,38,7,1,31.3,0
+MHS0769,Jais Dongoran,38,42,89.1,7,14.0,IPK < 2.5,22,11,3,76.7,0
+MHS0770,"Puti Novi Wacana, S.E.",42,15,50.49,1,76.1,IPK > 3.0,11,6,2,44.1,0
+MHS0771,"Puti Mulyani, S.Gz",37,97,81.26,6,82.2,IPK 2.5–3.0,33,7,5,61.9,1
+MHS0772,"Cager Pradana, S.I.Kom",28,28,66.01,1,72.1,IPK 2.5–3.0,35,13,6,68.2,0
+MHS0773,"Ir. Yani Wijaya, M.Ak",19,89,58.67,1,96.9,IPK < 2.5,29,11,2,60.7,0
+MHS0774,Elvina Fujiati,34,49,46.12,7,83.5,IPK > 3.0,18,8,5,21.2,0
+MHS0775,"Prakosa Hassanah, S.Pt",46,68,76.78,1,90.8,IPK > 3.0,12,14,5,45.4,0
+MHS0776,Joko Hidayanto,21,68,51.79,8,93.7,IPK > 3.0,31,4,5,54.9,0
+MHS0777,Bajragin Pangestu,9,57,58.57,0,81.1,IPK 2.5–3.0,6,12,2,77.9,0
+MHS0778,KH. Wardi Jailani,33,50,43.13,8,69.1,IPK < 2.5,21,4,6,45.5,0
+MHS0779,Tgk. Nilam Puspita,8,22,80.07,0,5.5,IPK > 3.0,18,10,7,83.5,0
+MHS0780,Irma Wibowo,14,54,78.33,9,49.3,IPK 2.5–3.0,29,9,4,45.2,0
+MHS0781,R. Nasim Wahyudin,21,98,76.68,9,59.3,IPK 2.5–3.0,34,3,2,53.9,1
+MHS0782,Jane Yuniar,14,62,54.97,1,33.9,IPK 2.5–3.0,33,12,5,73.7,0
+MHS0783,Ir. Vera Nababan,21,51,48.67,5,35.2,IPK > 3.0,24,8,6,56.6,0
+MHS0784,Tira Saptono,24,72,71.88,5,96.3,IPK > 3.0,25,4,7,86.8,1
+MHS0785,Qori Hartati,28,36,64.81,0,89.7,IPK > 3.0,26,13,3,62.8,1
+MHS0786,Michelle Lestari,9,47,48.91,6,85.7,IPK > 3.0,39,1,1,51.8,1
+MHS0787,"Dr. Nyana Megantara, S.Sos",38,69,74.3,7,43.6,IPK > 3.0,20,14,5,11.9,1
+MHS0788,Wira Setiawan,10,16,89.56,1,6.3,IPK > 3.0,21,9,3,43.1,0
+MHS0789,Galang Najmudin,6,14,77.36,7,12.6,IPK > 3.0,20,7,4,33.9,0
+MHS0790,"Mila Widodo, S.T.",17,54,77.0,8,34.7,IPK > 3.0,6,14,7,69.8,0
+MHS0791,"Drs. Jasmani Prasetyo, S.H.",47,67,87.52,5,6.5,IPK > 3.0,8,6,7,26.7,0
+MHS0792,Rangga Anggraini,47,40,50.15,4,6.6,IPK 2.5–3.0,25,7,5,26.4,0
+MHS0793,Icha Setiawan,15,32,68.28,8,92.1,IPK > 3.0,38,11,7,25.2,0
+MHS0794,Leo Wijaya,27,51,88.98,8,72.1,IPK < 2.5,34,2,3,20.0,0
+MHS0795,Aisyah Rajasa,20,19,48.26,0,34.4,IPK 2.5–3.0,10,14,5,34.9,0
+MHS0796,"R.A. Dinda Hariyah, M.Farm",35,41,75.01,2,17.6,IPK > 3.0,21,14,2,80.9,0
+MHS0797,"Novi Handayani, S.H.",15,62,69.29,8,53.6,IPK < 2.5,29,3,6,72.0,0
+MHS0798,"Ir. Hardi Simbolon, M.Kom.",20,39,69.32,1,5.5,IPK > 3.0,9,4,3,68.8,0
+MHS0799,Viman Safitri,12,48,74.88,3,94.1,IPK < 2.5,9,5,6,73.8,1
+MHS0800,Salsabila Mandala,8,40,86.48,3,44.4,IPK < 2.5,24,0,2,31.6,0
+MHS0801,Nurul Nashiruddin,44,91,79.13,1,43.2,IPK < 2.5,20,3,2,81.0,0
+MHS0802,Ibrani Maheswara,8,11,42.81,2,42.1,IPK < 2.5,13,10,6,21.0,0
+MHS0803,Tgk. Uli Wulandari,29,87,82.64,2,11.6,IPK 2.5–3.0,9,11,3,36.9,0
+MHS0804,R. Asirwanda Mustofa,7,86,51.28,0,65.6,IPK 2.5–3.0,6,9,6,56.9,1
+MHS0805,"Amelia Sitorus, S.Pd",36,21,58.85,5,74.6,IPK < 2.5,13,12,6,18.2,0
+MHS0806,Panca Melani,7,48,63.09,7,69.2,IPK > 3.0,26,4,1,68.4,1
+MHS0807,Ratna Haryanto,31,75,64.05,2,18.2,IPK < 2.5,26,6,3,41.0,0
+MHS0808,"Drs. Ajiman Marbun, M.Farm",33,22,61.76,4,60.0,IPK 2.5–3.0,26,12,1,72.8,0
+MHS0809,R. Ozy Setiawan,36,55,86.87,0,59.1,IPK > 3.0,38,4,5,49.4,0
+MHS0810,Teddy Wibisono,23,36,75.3,9,87.5,IPK 2.5–3.0,33,12,7,24.5,1
+MHS0811,"Cemeti Najmudin, S.Pt",25,26,71.56,6,41.0,IPK 2.5–3.0,37,12,6,68.8,0
+MHS0812,Drs. Kenzie Andriani,9,69,42.49,9,40.3,IPK > 3.0,22,0,5,30.2,0
