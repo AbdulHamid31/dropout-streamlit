@@ -20,7 +20,6 @@ mahasiswa = data[data["Nama"] == selected]
 
 # Tampilkan informasi
 st.title("Hasil Prediksi Dropout")
-st.write("**Nama Mahasiswa:**", selected)
 
 # Hitung statistik dropout
 jumlah_mahasiswa = len(data)
@@ -30,6 +29,8 @@ persentase_dropout = (jumlah_dropout / jumlah_mahasiswa) * 100
 # Tampilkan di halaman utama
 st.markdown(f"### 📊 Total Mahasiswa: {jumlah_mahasiswa}")
 st.markdown(f"### ❌ Jumlah Dropout: {jumlah_dropout} ({persentase_dropout:.1f}%)")
+
+st.write("**Nama Mahasiswa:**", selected)
 
 # Persiapkan data untuk prediksi
 X = mahasiswa.drop(columns=["ID Mahasiswa", "Nama", "dropout"])
