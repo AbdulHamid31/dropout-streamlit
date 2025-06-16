@@ -22,6 +22,15 @@ mahasiswa = data[data["Nama"] == selected]
 st.title("Hasil Prediksi Dropout")
 st.write("**Nama Mahasiswa:**", selected)
 
+# Hitung statistik dropout
+jumlah_mahasiswa = len(data)
+jumlah_dropout = data['dropout'].sum()
+persentase_dropout = (jumlah_dropout / jumlah_mahasiswa) * 100
+
+# Tampilkan di halaman utama
+st.markdown(f"### 📊 Total Mahasiswa: {jumlah_mahasiswa}")
+st.markdown(f"### ❌ Jumlah Dropout: {jumlah_dropout} ({persentase_dropout:.1f}%)")
+
 # Persiapkan data untuk prediksi
 X = mahasiswa.drop(columns=["ID Mahasiswa", "Nama", "dropout"])
 
@@ -39,3 +48,30 @@ shap_values = explainer(X)
 
 shap.plots.waterfall(shap_values[0])
 st.pyplot(plt.gcf())
+
+import matplotlib.pyplot as plt
+
+# Hitung jumlah dropout dan tidak
+dropout_counts = data['dropout'].value_counts()
+labels = ['Tidak Dropout', 'Dropout']
+colors = ['#28a745', '#dc3545']
+
+fig1, ax1 = plt.subplots()
+ax1.pie(dropout_counts, labels=labels, autopct='%1.1f%%', startangle=90, colors=colors)
+ax1.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
+
+st.subheader("Distribusi Dropout Mahasiswa")
+st.pyplot(fig1)
+
+# Hitung jumlah per kategori IPK
+ipk_counts = data['status_akademik_terakhir'].value_counts()
+
+fig2, ax2 = plt.subplots()
+ipk_counts.plot(kind='bar', color='#007bff', ax=ax2)
+ax2.set_title("Sebaran Mahasiswa Berdasarkan Status Akademik (IPK)")
+ax2.set_xlabel("Kategori IPK")
+ax2.set_ylabel("Jumlah Mahasiswa")
+
+st.subheader("Sebaran Mahasiswa Berdasarkan IPK")
+st.pyplot(fig2)
+
