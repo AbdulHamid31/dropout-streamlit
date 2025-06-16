@@ -44,4 +44,10 @@ st.write("**Probabilitas Risiko Dropout:**", f"{proba:.2%}")
 # Visualisasi SHAP
 st.subheader("📊 Penjelasan Prediksi (SHAP)")
 explainer = shap.Explainer(model)
-shap_values =_
+shap_values = explainer(X)
+
+# Plot waterfall
+shap.plots.waterfall(shap_values[0])
+st.pyplot(plt.gcf())
+
+
