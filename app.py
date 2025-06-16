@@ -13,65 +13,35 @@ data['status_akademik_terakhir'] = data['status_akademik_terakhir'].map({
     'IPK < 2.5': 0, 'IPK 2.5 - 3.0': 1, 'IPK > 3.0': 2
 })
 
-# Sidebar - Pilih Mahasiswa
-st.sidebar.title("Prediksi Dropout Mahasiswa")
-selected = st.sidebar.selectbox("Pilih Mahasiswa", data["Nama"])
-mahasiswa = data[data["Nama"] == selected]
-
-# Tampilkan informasi
-st.title("Hasil Prediksi Dropout")
-st.write("**Nama Mahasiswa:**", selected)
-
-# Persiapkan data untuk prediksi
-X = mahasiswa.drop(columns=["ID Mahasiswa", "Nama", "dropout"])
-
-# Prediksi
-prediksi = model.predict(X)[0]
-proba = model.predict_proba(X)[0][1]
-
-st.write("**Status Prediksi:**", "Dropout" if prediksi == 1 else "Tidak Dropout")
-st.write("**Probabilitas Risiko Dropout:**", f"{proba:.2%}")
-
-# Interpretasi dengan SHAP
-st.subheader("Penjelasan Prediksi (Visualisasi SHAP)")
-explainer = shap.Explainer(model)
-shap_values = explainer(X)
-
-shap.plots.waterfall(shap_values[0])
-st.pyplot(plt.gcf())
-
-import matplotlib.pyplot as plt
-
-# Hitung jumlah dropout dan tidak
-dropout_counts = data['dropout'].value_counts()
-labels = ['Tidak Dropout', 'Dropout']
-colors = ['#28a745', '#dc3545']
-
-fig1, ax1 = plt.subplots()
-ax1.pie(dropout_counts, labels=labels, autopct='%1.1f%%', startangle=90, colors=colors)
-ax1.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
-
-st.subheader("Distribusi Dropout Mahasiswa")
-st.pyplot(fig1)
-
-# Hitung jumlah per kategori IPK
-ipk_counts = data['status_akademik_terakhir'].value_counts()
-
-fig2, ax2 = plt.subplots()
-ipk_counts.plot(kind='bar', color='#007bff', ax=ax2)
-ax2.set_title("Sebaran Mahasiswa Berdasarkan Status Akademik (IPK)")
-ax2.set_xlabel("Kategori IPK")
-ax2.set_ylabel("Jumlah Mahasiswa")
-
-st.subheader("Sebaran Mahasiswa Berdasarkan IPK")
-st.pyplot(fig2)
-
 # Hitung statistik dropout
 jumlah_mahasiswa = len(data)
 jumlah_dropout = data['dropout'].sum()
+jumlah_tidak = jumlah_mahasiswa - jumlah_dropout
 persentase_dropout = (jumlah_dropout / jumlah_mahasiswa) * 100
 
-# Tampilkan di halaman utama
-st.markdown(f"### 📊 Total Mahasiswa: {jumlah_mahasiswa}")
-st.markdown(f"### ❌ Jumlah Dropout: {jumlah_dropout} ({persentase_dropout:.1f}%)")
+# Header
+st.title("🎓 Prediksi Dropout Mahasiswa")
+st.markdown(f"**Total Mahasiswa:** {jumlah_mahasiswa}")
+st.markdown(f"**Dropout:** {jumlah_dropout} mahasiswa ({persentase_dropout:.1f}%)")
+st.markdown("---")
 
+# Sidebar - Pilih Mahasiswa
+st.sidebar.header("🎯 Prediksi Individu")
+selected = st.sidebar.selectbox("Pilih Mahasiswa", data["Nama"])
+mahasiswa = data[data["Nama"] == selected]
+
+# Prediksi
+X = mahasiswa.drop(columns=["ID Mahasiswa", "Nama", "dropout"])
+prediksi = model.predict(X)[0]
+proba = model.predict_proba(X)[0][1]
+
+# Tampilkan hasil
+st.subheader("📌 Hasil Prediksi Mahasiswa")
+st.write("**Nama Mahasiswa:**", selected)
+st.write("**Status Prediksi:**", "❌ Dropout" if prediksi == 1 else "✅ Tidak Dropout")
+st.write("**Probabilitas Risiko Dropout:**", f"{proba:.2%}")
+
+# Visualisasi SHAP
+st.subheader("📊 Penjelasan Prediksi (SHAP)")
+explainer = shap.Explainer(model)
+shap_values =_
