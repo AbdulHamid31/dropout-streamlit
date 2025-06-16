@@ -1,4 +1,3 @@
-
 import streamlit as st
 import pandas as pd
 import shap
@@ -38,6 +37,5 @@ st.subheader("Penjelasan Prediksi (Visualisasi SHAP)")
 explainer = shap.Explainer(model)
 shap_values = explainer(X)
 
-fig = shap.plots.waterfall(shap_values[0], show=False)
-st.set_option('deprecation.showPyplotGlobalUse', False)
-st.pyplot(fig)
+shap.plots.waterfall(shap_values[0])
+st.pyplot(plt.gcf())
