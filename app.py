@@ -41,6 +41,15 @@ proba = model.predict_proba(X)[0][1]
 st.write("**Status Prediksi:**", "Dropout" if prediksi == 1 else "Tidak Dropout")
 st.write("**Probabilitas Risiko Dropout:**", f"{proba:.2%}")
 
+# Interpretasi otomatis berdasarkan probabilitas
+if proba < 0.2:
+    st.success("✅ Mahasiswa ini sangat kecil kemungkinannya untuk dropout.")
+elif proba > 0.7:
+    st.error("⚠️ Mahasiswa ini berisiko tinggi dropout. Perlu perhatian khusus.")
+else:
+    st.warning("⚠️ Mahasiswa ini memiliki kemungkinan dropout sedang.")
+
+
 # Interpretasi dengan SHAP
 st.subheader("Penjelasan Prediksi (Visualisasi SHAP)")
 explainer = shap.Explainer(model)
