@@ -73,15 +73,4 @@ ax1.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
 st.subheader("Distribusi Dropout Mahasiswa")
 st.pyplot(fig1)
 
-# Hitung jumlah per kategori IPK
-ipk_counts = data['status_akademik_terakhir'].value_counts()
-
-fig2, ax2 = plt.subplots()
-ipk_counts.plot(kind='bar', color='#007bff', ax=ax2)
-ax2.set_title("Sebaran Mahasiswa Berdasarkan Status Akademik (IPK)")
-ax2.set_xlabel("Kategori IPK")
-ax2.set_ylabel("Jumlah Mahasiswa")
-
-st.subheader("Sebaran Mahasiswa Berdasarkan IPK")
-st.pyplot(fig2)
 
