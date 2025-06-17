@@ -73,38 +73,24 @@ ax1.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
 st.subheader("Distribusi Dropout Mahasiswa")
 st.pyplot(fig1)
 
-from graphviz import Digraph
+import streamlit as st
 
-dot = Digraph(comment='Diagram Alur Sistem Streamlit')
+st.subheader("🧭 Diagram Alur Sistem Streamlit (Prediksi Dropout)")
 
-# Gaya umum
-dot.attr(rankdir='TB', size='8,10')
-dot.attr('node', shape='box', style='filled', fillcolor='#f0f8ff', fontname='Arial')
-
-# Node alur
-dot.node('A', 'Mulai')
-dot.node('B', 'User membuka aplikasi Streamlit')
-dot.node('C', 'User memilih mahasiswa dari sidebar')
-dot.node('D', 'Ambil data fitur mahasiswa dari CSV')
-dot.node('E', 'Preprocessing data (encode IPK)')
-dot.node('F', 'Model XGBoost memproses data')
-dot.node('G', 'Hitung probabilitas dropout')
-dot.node('H', 'Tampilkan hasil prediksi')
-dot.node('I1', 'Status (Dropout / Tidak)')
-dot.node('I2', 'Probabilitas Dropout (%)')
-dot.node('I3', 'Visualisasi SHAP / Tabel')
-dot.node('Z', 'Selesai')
-
-# Panah antar langkah
-dot.edges(['AB', 'BC', 'CD', 'DE', 'EF', 'FG', 'GH'])
-dot.edge('H', 'I1')
-dot.edge('H', 'I2')
-dot.edge('H', 'I3')
-dot.edge('I1', 'Z')
-dot.edge('I2', 'Z')
-dot.edge('I3', 'Z')
-
-# Tampilkan atau simpan
-dot.render('diagram_alur_streamlit', format='png', cleanup=True)
-        
-
+st.graphviz_chart('''
+digraph {
+    Mulai -> "Buka Aplikasi Streamlit"
+    "Buka Aplikasi Streamlit" -> "Pilih Mahasiswa"
+    "Pilih Mahasiswa" -> "Ambil Data dari CSV"
+    "Ambil Data dari CSV" -> "Preprocessing (Encode IPK)"
+    "Preprocessing (Encode IPK)" -> "Model XGBoost"
+    "Model XGBoost" -> "Hitung Probabilitas Dropout"
+    "Hitung Probabilitas Dropout" -> "Tampilkan Hasil"
+    "Tampilkan Hasil" -> "Status Dropout / Tidak"
+    "Tampilkan Hasil" -> "Probabilitas (%)"
+    "Tampilkan Hasil" -> "Visualisasi SHAP"
+    "Status Dropout / Tidak" -> Selesai
+    "Probabilitas (%)" -> Selesai
+    "Visualisasi SHAP" -> Selesai
+}
+''')
