@@ -73,4 +73,27 @@ ax1.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
 st.subheader("Distribusi Dropout Mahasiswa")
 st.pyplot(fig1)
 
+           Mulai
+             ↓
+   [User membuka aplikasi Streamlit]
+             ↓
+   [User memilih mahasiswa dari sidebar]
+             ↓
+   [Ambil data fitur mahasiswa dari CSV]
+             ↓
+   [Preprocessing data (encode IPK, normalisasi dll)]
+             ↓
+   [Model XGBoost memproses data]
+             ↓
+   [Hitung probabilitas dropout]
+             ↓
+   [Tampilkan hasil prediksi]
+             ↓
+ ┌────────────┬──────────────┐
+ │            │              │
+ ▼            ▼              ▼
+Status     Probabilitas   Visualisasi
+(Prediksi)  Dropout (%)    SHAP/Tabel
+             ↓
+          [Selesai]
 
