@@ -110,17 +110,6 @@ elif menu == "Prediksi Dropout":
 
 elif menu == "Visualisasi":
     st.title("📈 Visualisasi Data Mahasiswa")
-
-    st.subheader("Distribusi Dropout Mahasiswa")
-    dropout_counts = data['dropout'].value_counts()
-    labels = ['Tidak Dropout', 'Dropout']
-    colors = ['#28a745', '#dc3545']
-
-    fig1, ax1 = plt.subplots()
-    ax1.pie(dropout_counts, labels=labels, autopct='%1.1f%%', startangle=90, colors=colors)
-    ax1.axis('equal')
-    st.pyplot(fig1)
-
     st.subheader("Visualisasi SHAP (Penjelasan Prediksi)")
     mahasiswa = st.session_state["user_data"]
     X = mahasiswa.drop(columns=["ID Mahasiswa", "Nama", "dropout"])
