@@ -25,8 +25,6 @@ def load_data():
     'IPK > 3.0': 2
 })
 
-})
-
     return df
 
 model = load_model()
