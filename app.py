@@ -14,7 +14,7 @@ def load_model():
 
 @st.cache_data
 def load_data():
-    df = pd.read_csv("dataset_mahasiswa.csv")  # Ganti sesuai nama file final di deploy
+    df = pd.read_csv("dataset_mahasiswa_812.csv")  # Ganti sesuai nama file final di deploy
     df['status_akademik_terakhir'] = df['status_akademik_terakhir'].map({
         'IPK < 2.5': 0,
         'IPK 2.5 - 3.0': 1,
