@@ -44,7 +44,7 @@ def login():
             st.session_state["logged_in"] = True
             st.session_state["username"] = selected_nama
             st.session_state["user_data"] = user_row
-            st.experimental_rerun()
+            st.rerun()  # ✅ GANTI DARI experimental_rerun()
         else:
             st.sidebar.error("❌ NIM tidak cocok dengan nama yang dipilih.")
 
