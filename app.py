@@ -15,11 +15,16 @@ def load_model():
 @st.cache_data
 def load_data():
     df = pd.read_csv("dataset_mahasiswa_812.csv")  # Pastikan nama file sesuai
+   # Simpan label teks IPK untuk dashboard
+    df["ipk_label"] = df["status_akademik_terakhir"]
+
+    # Lalu mapping ke angka untuk model prediksi
     df['status_akademik_terakhir'] = df['status_akademik_terakhir'].map({
-        'IPK < 2.5': 0,
-        'IPK 2.5 - 3.0': 1,
-        'IPK > 3.0': 2
-    })
+    'IPK < 2.5': 0,
+    'IPK 2.5 - 3.0': 1,
+    'IPK > 3.0': 2
+})
+
     return df
 
 model = load_model()
