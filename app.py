@@ -18,18 +18,6 @@ st.sidebar.title("Prediksi Dropout Mahasiswa")
 selected = st.sidebar.selectbox("Pilih Mahasiswa", data["Nama"])
 mahasiswa = data[data["Nama"] == selected]
 
-# Tampilkan informasi
-st.title("Hasil Prediksi Dropout")
-
-# Hitung statistik dropout
-jumlah_mahasiswa = len(data)
-jumlah_dropout = data['dropout'].sum()
-persentase_dropout = (jumlah_dropout / jumlah_mahasiswa) * 100
-
-# Tampilkan di halaman utama
-st.markdown(f"### 📊 Total Mahasiswa: {jumlah_mahasiswa}")
-st.markdown(f"### ❌ Jumlah Dropout: {jumlah_dropout} ({persentase_dropout:.1f}%)")
-
 st.write("**Nama Mahasiswa:**", selected)
 
 # Persiapkan data untuk prediksi
