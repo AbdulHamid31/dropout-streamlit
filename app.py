@@ -14,17 +14,12 @@ def load_model():
 
 @st.cache_data
 def load_data():
-    df = pd.read_csv("dataset_mahasiswa_812.csv")  # Pastikan nama file sesuai
-  # Simpan label teks IPK untuk dashboard
-    df["ipk_label"] = df["status_akademik_terakhir"]
-
-    # Lalu mapping ke angka untuk model prediksi
+    df = pd.read_csv("dataset_mahasiswa.csv")  # Pastikan nama file sesuai
     df['status_akademik_terakhir'] = df['status_akademik_terakhir'].map({
-    'IPK < 2.5': 0,
-    'IPK 2.5 - 3.0': 1,
-    'IPK > 3.0': 2
-})
-
+        'IPK < 2.5': 0,
+        'IPK 2.5 - 3.0': 1,
+        'IPK > 3.0': 2
+    })
     return df
 
 model = load_model()
@@ -72,48 +67,17 @@ menu = st.sidebar.radio("📚 Menu Navigasi", ["Dashboard", "Prediksi Dropout & 
 # ====================
 
 if menu == "Dashboard":
+    st.title("🎓 Dashboard LMS Mahasiswa")
+    st.markdown("Selamat datang di sistem prediksi risiko dropout mahasiswa.")
     mahasiswa = st.session_state["user_data"].iloc[0]
 
-    nama = mahasiswa["Nama"]
-    status_login = "Aktif"
-    total_login = mahasiswa.get("total_login", 0)
-    materi_selesai = mahasiswa.get("materi_selesai", 0)
-    status_ipk = mahasiswa.get("status_akademik_terakhir", "IPK < 2.5")
+    st.markdown("### 👤 Informasi Mahasiswa")
+    st.write("**Nama:**", mahasiswa["Nama"])
+    st.write("**ID Mahasiswa:**", mahasiswa["ID Mahasiswa"])
+    st.write("**Status Akademik Terakhir:**", mahasiswa["status_akademik_terakhir"])
 
-    # Konversi status IPK ke nilai numerik
-    ipk_lookup = {
-        "IPK < 2.5": 2.25,
-        "IPK 2.5 - 3.0": 2.75,
-        "IPK > 3.0": 3.25
-    }
-    ipk = ipk_lookup.get(status_ipk, 0.0)
-    progress = mahasiswa.get("kemajuan_kelas", 0)
-
-    st.markdown(f"<h2>🎓 LMS Mahasiswa - {nama}</h2>", unsafe_allow_html=True)
-    st.markdown(f"<h4>👋 Selamat datang, {nama}!</h4>", unsafe_allow_html=True)
     st.markdown("---")
-
-    col1, col2, col3, col4 = st.columns(4)
-
-    with col1:
-        st.markdown("**Status Login**")
-        st.metric(label="", value=status_login)
-
-    with col2:
-        st.markdown("**Total Login**")
-        st.metric(label="", value=f"{total_login}")
-
-    with col3:
-        st.markdown("**Materi Selesai**")
-        st.metric(label="", value=f"{materi_selesai}")
-
-    with col4:
-        st.markdown("**IPK Terakhir**")
-        st.metric(label="", value=f"{ipk:.2f}")
-
-    st.markdown("### Kemajuan Kelas")
-    st.progress(int(progress))
-
+    st.dataframe(data[["Nama", "status_akademik_terakhir", "dropout"]].sample(5), use_container_width=True)
 
 # ================================================
 # === GABUNG: PREDIKSI DROPOUT & VISUALISASI =====
