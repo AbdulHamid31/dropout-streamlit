@@ -99,10 +99,6 @@ if menu == "Dashboard":
     st.markdown("### 📈 Kemajuan Kelas (berdasarkan login)")
     st.progress(progress)
 
-    st.markdown("### 📈 Kemajuan Kelas")
-    st.progress(kemajuan)
-
-
 # ================================================
 # === GABUNG: PREDIKSI DROPOUT & VISUALISASI =====
 # ================================================
