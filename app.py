@@ -136,21 +136,20 @@ elif menu == "Prediksi Dropout & Visualisasi":
     st.pyplot(plt.gcf())
     
     # Tambahkan keterangan interpretasi SHAP
-        st.markdown("### ℹ️ Penjelasan Visualisasi SHAP")
-        st.markdown("""
-        Visualisasi di atas menunjukkan bagaimana masing-masing fitur mempengaruhi prediksi dropout mahasiswa:
+    st.markdown("### ℹ️ Penjelasan Visualisasi SHAP")
+    st.markdown("""
+    Visualisasi di atas menunjukkan bagaimana masing-masing fitur mempengaruhi prediksi dropout mahasiswa:
         
-        - 🔵 Warna biru menunjukkan fitur yang **mengurangi risiko dropout**.
-        - 🔴 Warna merah menunjukkan fitur yang **meningkatkan risiko dropout**.
-        - Panjang batang menunjukkan seberapa besar pengaruh fitur tersebut terhadap prediksi akhir.
+    - 🔵 Warna biru menunjukkan fitur yang **mengurangi risiko dropout**.
+    - 🔴 Warna merah menunjukkan fitur yang **meningkatkan risiko dropout**.
+    - Panjang batang menunjukkan seberapa besar pengaruh fitur tersebut terhadap prediksi akhir.
         
-        Contoh interpretasi:
-        - Fitur `durasi_total_akses = 58.6` memiliki nilai negatif besar (-1.35), artinya **menurunkan risiko dropout secara signifikan**.
-        - Sebaliknya, `skor_kuis_rata2 = 40.45` sedikit **meningkatkan risiko dropout**.
+    Contoh interpretasi:
+    - Fitur `durasi_total_akses = 58.6` memiliki nilai negatif besar (-1.35), artinya **menurunkan risiko dropout secara signifikan**.
+    - Sebaliknya, `skor_kuis_rata2 = 40.45` sedikit **meningkatkan risiko dropout**.
         
-        Nilai prediksi akhir (`f(x)`) digerakkan dari rata-rata prediksi (`E[f(x)]`) oleh kontribusi setiap fitur.
-        """)
-
+    Nilai prediksi akhir (`f(x)`) digerakkan dari rata-rata prediksi (`E[f(x)]`) oleh kontribusi setiap fitur.
+    """)
 
 # ====================
 # ===== LOGOUT =======
