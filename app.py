@@ -101,15 +101,15 @@ if menu == "Dashboard":
 
     with col2:
         st.markdown("**Total Login**")
-        st.metric(label="", value=f"{total_login}x", delta="+5% sejak minggu lalu")
+        st.metric(label="", value=f"{total_login})
 
     with col3:
         st.markdown("**Materi Selesai**")
-        st.metric(label="", value=f"{materi_selesai}", delta="+2 modul")
+        st.metric(label="", value=f"{materi_selesai})
 
     with col4:
         st.markdown("**IPK Terakhir**")
-        st.metric(label="", value=f"{ipk:.2f}", delta="+0.10")
+        st.metric(label="", value=f"{ipk:.2f})
 
     st.markdown("### Kemajuan Kelas")
     st.progress(int(progress))
