@@ -14,7 +14,7 @@ def load_model():
 
 @st.cache_data
 def load_data():
-    df = pd.read_csv("dataset_mahasiswa_812.csv")
+    df = pd.read_csv("dataset_mahasiswa.csv")  # Ganti sesuai nama file final di deploy
     df['status_akademik_terakhir'] = df['status_akademik_terakhir'].map({
         'IPK < 2.5': 0,
         'IPK 2.5 - 3.0': 1,
@@ -31,18 +31,22 @@ data = load_data()
 
 def login():
     st.sidebar.title("🔐 Login Mahasiswa")
-    username = st.sidebar.text_input("Nama Mahasiswa")
-    password = st.sidebar.text_input("ID Mahasiswa", type="password")
+    nama_list = data["Nama"].unique()
+    selected_nama = st.sidebar.selectbox("Pilih Nama Mahasiswa", nama_list)
+    password = st.sidebar.text_input("Masukkan NIM Mahasiswa", type="password")
 
     if st.sidebar.button("Login"):
-        user_row = data[(data["Nama"] == username) & (data["ID Mahasiswa"].astype(str) == password)]
+        user_row = data[
+            (data["Nama"] == selected_nama) &
+            (data["ID Mahasiswa"].astype(str) == password)
+        ]
         if not user_row.empty:
             st.session_state["logged_in"] = True
-            st.session_state["username"] = username
+            st.session_state["username"] = selected_nama
             st.session_state["user_data"] = user_row
             st.experimental_rerun()
         else:
-            st.sidebar.error("❌ Nama atau ID salah.")
+            st.sidebar.error("❌ NIM tidak cocok dengan nama yang dipilih.")
 
 if "logged_in" not in st.session_state:
     st.session_state["logged_in"] = False
