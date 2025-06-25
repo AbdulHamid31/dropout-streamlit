@@ -93,6 +93,12 @@ if menu == "Dashboard":
         st.markdown("**Materi Selesai**")
         st.metric(label="", value=f"{materi_selesai}")
 
+    # Hitung persentase kemajuan berdasarkan total_login
+    progress = int(min(total_login, 50) / 50 * 100)
+
+st.markdown("### 📈 Kemajuan Kelas (berdasarkan login)")
+st.progress(progress)
+
     st.markdown("### 📈 Kemajuan Kelas")
     st.progress(kemajuan)
 
