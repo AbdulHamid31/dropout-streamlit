@@ -67,17 +67,22 @@ menu = st.sidebar.radio("📚 Menu Navigasi", ["Dashboard", "Prediksi Dropout & 
 # ====================
 
 if menu == "Dashboard":
-    st.title("🎓 Dashboard LMS Mahasiswa")
-    st.markdown("Selamat datang di sistem prediksi risiko dropout mahasiswa.")
     mahasiswa = st.session_state["user_data"].iloc[0]
+    nama = mahasiswa["Nama"]
+    ipk = mahasiswa.get("ipk_terakhir", 0)
+    progress = mahasiswa.get("kemajuan_kelas", 0)
 
-    st.markdown("### 👤 Informasi Mahasiswa")
-    st.write("**Nama:**", mahasiswa["Nama"])
-    st.write("**ID Mahasiswa:**", mahasiswa["ID Mahasiswa"])
-    st.write("**Status Akademik Terakhir:**", mahasiswa["status_akademik_terakhir"])
+    st.markdown(f"""
+        <h1 style='font-size:32px'>🎓 LMS Mahasiswa - {nama}</h1>
+        <h3>👋 Selamat Datang, {nama}!</h3>
+        """, unsafe_allow_html=True)
 
-    st.markdown("---")
-    st.dataframe(data[["Nama", "status_akademik_terakhir", "dropout"]].sample(5), use_container_width=True)
+    col1, col2, col3 = st.columns(3)
+    col1.metric("Status Login", "Aktif")
+    col2.metric("IPK Terakhir", f"{ipk:.2f}")
+    col3.metric("Kemajuan Kelas", f"{progress:.0f}%")
+
+    st.progress(int(progress))
 
 # ================================================
 # === GABUNG: PREDIKSI DROPOUT & VISUALISASI =====
