@@ -68,21 +68,47 @@ menu = st.sidebar.radio("📚 Menu Navigasi", ["Dashboard", "Prediksi Dropout & 
 
 if menu == "Dashboard":
     mahasiswa = st.session_state["user_data"].iloc[0]
+
     nama = mahasiswa["Nama"]
-    ipk = mahasiswa.get("ipk_terakhir", 0)
+    status_login = "Aktif"
+    total_login = mahasiswa.get("total_login", 0)
+    materi_selesai = mahasiswa.get("materi_selesai", 0)
+    status_ipk = mahasiswa.get("status_akademik_terakhir", "IPK < 2.5")
+
+    # Konversi status IPK ke nilai numerik
+    ipk_lookup = {
+        "IPK < 2.5": 2.25,
+        "IPK 2.5 - 3.0": 2.75,
+        "IPK > 3.0": 3.25
+    }
+    ipk = ipk_lookup.get(status_ipk, 0.0)
     progress = mahasiswa.get("kemajuan_kelas", 0)
 
-    st.markdown(f"""
-        <h1 style='font-size:32px'>🎓 LMS Mahasiswa - {nama}</h1>
-        <h3>👋 Selamat Datang, {nama}!</h3>
-        """, unsafe_allow_html=True)
+    st.markdown(f"<h2>🎓 LMS Mahasiswa - {nama}</h2>", unsafe_allow_html=True)
+    st.markdown(f"<h4>👋 Selamat datang, {nama}!</h4>", unsafe_allow_html=True)
+    st.markdown("---")
 
-    col1, col2, col3 = st.columns(3)
-    col1.metric("Status Login", "Aktif")
-    col2.metric("IPK Terakhir", f"{ipk:.2f}")
-    col3.metric("Kemajuan Kelas", f"{progress:.0f}%")
+    col1, col2, col3, col4 = st.columns(4)
 
+    with col1:
+        st.markdown("**Status Login**")
+        st.metric(label="", value=status_login)
+
+    with col2:
+        st.markdown("**Total Login**")
+        st.metric(label="", value=f"{total_login}x", delta="+5% sejak minggu lalu")
+
+    with col3:
+        st.markdown("**Materi Selesai**")
+        st.metric(label="", value=f"{materi_selesai}", delta="+2 modul")
+
+    with col4:
+        st.markdown("**IPK Terakhir**")
+        st.metric(label="", value=f"{ipk:.2f}", delta="+0.10")
+
+    st.markdown("### Kemajuan Kelas")
     st.progress(int(progress))
+
 
 # ================================================
 # === GABUNG: PREDIKSI DROPOUT & VISUALISASI =====
