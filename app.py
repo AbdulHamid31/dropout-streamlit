@@ -14,7 +14,7 @@ def load_model():
 
 @st.cache_data
 def load_data():
-    df = pd.read_csv("dataset_mahasiswa_812.csv")  # Ganti sesuai nama file final di deploy
+    df = pd.read_csv("dataset_mahasiswa.csv")  # Pastikan nama file sesuai
     df['status_akademik_terakhir'] = df['status_akademik_terakhir'].map({
         'IPK < 2.5': 0,
         'IPK 2.5 - 3.0': 1,
@@ -33,18 +33,18 @@ def login():
     st.sidebar.title("🔐 Login Mahasiswa")
     nama_list = data["Nama"].unique()
     selected_nama = st.sidebar.selectbox("Pilih Nama Mahasiswa", nama_list)
-    password = st.sidebar.text_input("Masukkan NIM Mahasiswa", type="password")
+    nim = st.sidebar.text_input("Masukkan NIM Mahasiswa", type="password")
 
     if st.sidebar.button("Login"):
         user_row = data[
             (data["Nama"] == selected_nama) &
-            (data["ID Mahasiswa"].astype(str) == password)
+            (data["ID Mahasiswa"].astype(str) == nim)
         ]
         if not user_row.empty:
             st.session_state["logged_in"] = True
             st.session_state["username"] = selected_nama
             st.session_state["user_data"] = user_row
-            st.rerun()  # ✅ GANTI DARI experimental_rerun()
+            st.rerun()
         else:
             st.sidebar.error("❌ NIM tidak cocok dengan nama yang dipilih.")
 
@@ -60,7 +60,7 @@ if not st.session_state["logged_in"]:
 # =====================
 
 st.sidebar.success(f"Login sebagai {st.session_state['username']}")
-menu = st.sidebar.radio("📚 Menu Navigasi", ["Dashboard", "Prediksi Dropout", "Visualisasi", "Logout"])
+menu = st.sidebar.radio("📚 Menu Navigasi", ["Dashboard", "Prediksi Dropout & Visualisasi", "Logout"])
 
 # ====================
 # ==== DASHBOARD =====
@@ -79,15 +79,17 @@ if menu == "Dashboard":
     st.markdown("---")
     st.dataframe(data[["Nama", "status_akademik_terakhir", "dropout"]].sample(5), use_container_width=True)
 
-# ====================
-# ==== PREDIKSI ======
-# ====================
+# ================================================
+# === GABUNG: PREDIKSI DROPOUT & VISUALISASI =====
+# ================================================
 
-elif menu == "Prediksi Dropout":
-    st.title("🤖 Prediksi Risiko Dropout")
+elif menu == "Prediksi Dropout & Visualisasi":
+    st.title("🧠 Prediksi & Visualisasi Risiko Dropout")
+
+    # ===== Prediksi =====
+    st.subheader("🤖 Hasil Prediksi")
     mahasiswa = st.session_state["user_data"]
     nama = mahasiswa["Nama"].values[0]
-
     st.write("**Nama Mahasiswa:**", nama)
 
     X = mahasiswa.drop(columns=["ID Mahasiswa", "Nama", "dropout"])
@@ -104,20 +106,27 @@ elif menu == "Prediksi Dropout":
     else:
         st.warning("⚠️ Mahasiswa ini memiliki kemungkinan dropout sedang.")
 
-# ============================
-# ==== VISUALISASI ==========
-# ============================
-
-elif menu == "Visualisasi":
-    st.title("📈 Visualisasi Data Mahasiswa")
-    st.subheader("Visualisasi SHAP (Penjelasan Prediksi)")
-    mahasiswa = st.session_state["user_data"]
-    X = mahasiswa.drop(columns=["ID Mahasiswa", "Nama", "dropout"])
+    # ===== SHAP =====
+    st.markdown("---")
+    st.subheader("📊 Visualisasi SHAP (Penjelasan Prediksi)")
 
     explainer = shap.Explainer(model)
     shap_values = explainer(X)
     shap.plots.waterfall(shap_values[0])
     st.pyplot(plt.gcf())
+
+    # ===== Pie Chart Distribusi =====
+    st.markdown("---")
+    st.subheader("📈 Distribusi Dropout Mahasiswa")
+
+    dropout_counts = data['dropout'].value_counts()
+    labels = ['Tidak Dropout', 'Dropout']
+    colors = ['#28a745', '#dc3545']
+
+    fig1, ax1 = plt.subplots()
+    ax1.pie(dropout_counts, labels=labels, autopct='%1.1f%%', startangle=90, colors=colors)
+    ax1.axis('equal')
+    st.pyplot(fig1)
 
 # ====================
 # ===== LOGOUT =======
@@ -125,4 +134,4 @@ elif menu == "Visualisasi":
 
 elif menu == "Logout":
     st.session_state.clear()
-    st.experimental_rerun()
+    st.rerun()
