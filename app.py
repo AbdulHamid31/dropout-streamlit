@@ -20,9 +20,9 @@ def load_data():
 
     # Lalu mapping ke angka untuk model prediksi
     df['status_akademik_terakhir'] = df['status_akademik_terakhir'].map({
-    'IPK < 2.5': 0,
-    'IPK 2.5 - 3.0': 1,
-    'IPK > 3.0': 2
+    'IPK < 2.5': < 2.5,
+    'IPK 2.5 - 3.0': 2.5 - 3.0,
+    'IPK > 3.0': > 3.0
 })
 
     return df
