@@ -67,17 +67,35 @@ menu = st.sidebar.radio("📚 Menu Navigasi", ["Dashboard", "Prediksi Dropout & 
 # ====================
 
 if menu == "Dashboard":
-    st.title("🎓 Dashboard LMS Mahasiswa")
-    st.markdown("Selamat datang di sistem prediksi risiko dropout mahasiswa.")
     mahasiswa = st.session_state["user_data"].iloc[0]
 
-    st.markdown("### 👤 Informasi Mahasiswa")
-    st.write("**Nama:**", mahasiswa["Nama"])
-    st.write("**ID Mahasiswa:**", mahasiswa["ID Mahasiswa"])
-    st.write("**Status Akademik Terakhir:**", mahasiswa["status_akademik_terakhir"])
+    nama = mahasiswa["Nama"]
+    total_login = int(mahasiswa.get("total_login", 0))
+    materi_selesai = int(mahasiswa.get("materi_selesai", 0))
+    kemajuan = int(mahasiswa.get("kemajuan_kelas", 0))
 
+    st.markdown(f"<h2>🎓 LMS Mahasiswa - {nama}</h2>", unsafe_allow_html=True)
+    st.markdown(f"<h4>👋 Selamat datang, {nama}!</h4>", unsafe_allow_html=True)
     st.markdown("---")
-    st.dataframe(data[["Nama", "status_akademik_terakhir", "dropout"]].sample(5), use_container_width=True)
+
+    # 3 KARTU DASHBOARD (Tanpa IPK/Sales)
+    col1, col2, col3 = st.columns(3)
+
+    with col1:
+        st.markdown("**Status Login**")
+        st.metric(label="", value="Aktif")
+
+    with col2:
+        st.markdown("**Total Login**")
+        st.metric(label="", value=f"{total_login}x")
+
+    with col3:
+        st.markdown("**Materi Selesai**")
+        st.metric(label="", value=f"{materi_selesai}")
+
+    st.markdown("### 📈 Kemajuan Kelas")
+    st.progress(kemajuan)
+
 
 # ================================================
 # === GABUNG: PREDIKSI DROPOUT & VISUALISASI =====
