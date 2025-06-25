@@ -135,19 +135,6 @@ elif menu == "Prediksi Dropout & Visualisasi":
     shap.plots.waterfall(shap_values[0])
     st.pyplot(plt.gcf())
 
-    # ===== Pie Chart Distribusi =====
-    st.markdown("---")
-    st.subheader("📈 Distribusi Dropout Mahasiswa")
-
-    dropout_counts = data['dropout'].value_counts()
-    labels = ['Tidak Dropout', 'Dropout']
-    colors = ['#28a745', '#dc3545']
-
-    fig1, ax1 = plt.subplots()
-    ax1.pie(dropout_counts, labels=labels, autopct='%1.1f%%', startangle=90, colors=colors)
-    ax1.axis('equal')
-    st.pyplot(fig1)
-
 # ====================
 # ===== LOGOUT =======
 # ====================
