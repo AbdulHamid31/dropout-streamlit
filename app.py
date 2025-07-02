@@ -53,7 +53,7 @@ st.markdown(
             text-align: center;
             position: absolute;
             botton: -90%;
-            right: -20%;
+            right: -80%;
         }}
 
         .css-1d391kg .css-1cypcdb, .css-1d391kg .css-1d391kg {{
