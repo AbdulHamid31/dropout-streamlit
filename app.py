@@ -14,7 +14,7 @@ def load_model():
 
 @st.cache_data
 def load_data():
-    df = pd.read_csv("dataset_mahasiswa_812.csv")  # Pastikan nama file sesuai
+    df = pd.read_csv("dataset_mahasiswa_812.csv")
     df['status_akademik_terakhir'] = df['status_akademik_terakhir'].map({
         'IPK < 2.5': 0,
         'IPK 2.5 - 3.0': 1,
@@ -25,12 +25,51 @@ def load_data():
 model = load_model()
 data = load_data()
 
+# ================================================
+# === CUSTOM BACKGROUND & STYLING (CSS) =========
+# ================================================
+st.markdown(
+    f"""
+    <style>
+        .stApp {{
+            background-image: url('https://drive.google.com/uc?export=view&id=1Wzpe2SWVA0rRf2HGJcJus6LangNUdBnU');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }}
+        .css-1d391kg .css-1cypcdb, .css-1d391kg .css-1d391kg {{
+            background-color: rgba(0, 0, 0, 0.7) !important;
+            border-radius: 10px;
+        }}
+        .sidebar .sidebar-content {{
+            background-color: rgba(0, 0, 0, 0.7) !important;
+        }}
+        .login-message {{
+            text-align: center;
+            padding: 30px;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 15px;
+            margin: 40px;
+        }}
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 # ===================
 # === LOGIN SYSTEM ==
 # ===================
-
 def login():
     st.sidebar.title("🔐 Login Mahasiswa")
+
+    # Tambah ucapan di sidebar
+    st.sidebar.markdown("""
+    <div style='text-align: center; color: white; font-size: 16px; padding: 10px;'>
+        Selamat Datang di Portal Mahasiswa Universitas XYZ
+    </div>
+    """, unsafe_allow_html=True)
+
     nama_list = data["Nama"].unique()
     selected_nama = st.sidebar.selectbox("Pilih Nama Mahasiswa", nama_list)
     nim = st.sidebar.text_input("Masukkan NIM Mahasiswa", type="password")
@@ -51,24 +90,31 @@ def login():
 if "logged_in" not in st.session_state:
     st.session_state["logged_in"] = False
 
+# ================================
+# ==== HALAMAN LOGIN (BELUM LOGIN)
+# ================================
 if not st.session_state["logged_in"]:
+    st.markdown("""
+        <div class='login-message'>
+            <h1>Selamat Datang di Portal Mahasiswa Universitas XYZ</h1>
+            <h4>Silakan login menggunakan nama dan NIM Anda untuk melanjutkan</h4>
+        </div>
+    """, unsafe_allow_html=True)
+
     login()
     st.stop()
 
 # =====================
 # === SIDEBAR MENU ====
 # =====================
-
-st.sidebar.success(f"Login sebagai {st.session_state['username']}")
+st.sidebar.success(f"✅ Login sebagai {st.session_state['username']}")
 menu = st.sidebar.radio("📚 Menu Navigasi", ["Dashboard", "Prediksi Dropout & Visualisasi", "Logout"])
 
 # ====================
 # ==== DASHBOARD =====
 # ====================
-
 if menu == "Dashboard":
     mahasiswa = st.session_state["user_data"].iloc[0]
-
     nama = mahasiswa["Nama"]
     total_login = int(mahasiswa.get("total_login", 0))
     materi_selesai = int(mahasiswa.get("materi_selesai", 0))
@@ -78,9 +124,7 @@ if menu == "Dashboard":
     st.markdown(f"<h4>👋 Selamat datang, {nama}!</h4>", unsafe_allow_html=True)
     st.markdown("---")
 
-    # 3 KARTU DASHBOARD (Tanpa IPK/Sales)
     col1, col2, col3 = st.columns(3)
-
     with col1:
         st.markdown("**Status Login**")
         st.metric(label="", value="Aktif")
@@ -93,20 +137,15 @@ if menu == "Dashboard":
         st.markdown("**Materi Selesai**")
         st.metric(label="", value=f"{materi_selesai}")
 
-    # Hitung persentase kemajuan berdasarkan total_login
     progress = int(min(total_login, 50) / 50 * 100)
-
     st.markdown("### 📈 Kemajuan Kelas (berdasarkan login)")
     st.progress(progress)
 
 # ================================================
-# === GABUNG: PREDIKSI DROPOUT & VISUALISASI =====
+# === PREDIKSI DROPOUT & VISUALISASI SHAP =======
 # ================================================
-
 elif menu == "Prediksi Dropout & Visualisasi":
     st.title("🧠 Prediksi & Visualisasi Risiko Dropout")
-
-    # ===== Prediksi =====
     st.subheader("🤖 Hasil Prediksi")
     mahasiswa = st.session_state["user_data"]
     nama = mahasiswa["Nama"].values[0]
@@ -126,7 +165,6 @@ elif menu == "Prediksi Dropout & Visualisasi":
     else:
         st.warning("⚠️ Mahasiswa ini memiliki kemungkinan dropout sedang.")
 
-    # ===== SHAP =====
     st.markdown("---")
     st.subheader("📊 Visualisasi SHAP (Penjelasan Prediksi)")
 
@@ -134,27 +172,21 @@ elif menu == "Prediksi Dropout & Visualisasi":
     shap_values = explainer(X)
     shap.plots.waterfall(shap_values[0])
     st.pyplot(plt.gcf())
-    
-    # Tambahkan keterangan interpretasi SHAP
+
     st.markdown("### ℹ️ Penjelasan Visualisasi SHAP")
     st.markdown("""
     Visualisasi di atas menunjukkan bagaimana masing-masing fitur mempengaruhi prediksi dropout mahasiswa:
-        
-    - 🔵 Warna biru menunjukkan fitur yang **mengurangi risiko dropout**.
-    - 🔴 Warna merah menunjukkan fitur yang **meningkatkan risiko dropout**.
-    - Panjang batang menunjukkan seberapa besar pengaruh fitur tersebut terhadap prediksi akhir.
-        
-    Contoh interpretasi:
-    - Fitur `durasi_total_akses = 58.6` memiliki nilai negatif besar (-1.35), artinya **menurunkan risiko dropout secara signifikan**.
-    - Sebaliknya, `skor_kuis_rata2 = 40.45` sedikit **meningkatkan risiko dropout**.
-        
+
+    - 🔵 Warna biru = fitur yang **mengurangi risiko dropout**.
+    - 🔴 Warna merah = fitur yang **meningkatkan risiko dropout**.
+    - Panjang batang = besarnya pengaruh fitur.
+
     Nilai prediksi akhir (`f(x)`) digerakkan dari rata-rata prediksi (`E[f(x)]`) oleh kontribusi setiap fitur.
     """)
 
 # ====================
 # ===== LOGOUT =======
 # ====================
-
 elif menu == "Logout":
     st.session_state.clear()
     st.rerun()
