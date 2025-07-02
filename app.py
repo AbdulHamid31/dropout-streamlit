@@ -32,7 +32,7 @@ st.markdown(
     f"""
     <style>
         .stApp {{
-            background-image: url('https://drive.google.com/uc?export=view&id=1Wzpe2SWVA0rRf2HGJcJus6LangNUdBnU');
+            background-image: url('https://github.com/AbdulHamid31/dropout-streamlit/blob/main/1%20univ.jpg');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
