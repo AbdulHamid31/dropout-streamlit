@@ -45,12 +45,23 @@ st.markdown(
             background-color: rgba(0, 0, 0, 0.7) !important;
         }}
         .login-message {{
-            text-align: center;
-            padding: 30px;
+            max-width: 400px;
+            background-color: rgba(0,0,0,0.6);
             color: white;
-            background-color: rgba(0, 0, 0, 0.5);
+            padding: 30px;
             border-radius: 15px;
-            margin: 40px;
+            text-align: center;
+            position: absolute;
+            top: 20%;
+            right: 5%;
+        }}
+
+        .css-1d391kg .css-1cypcdb, .css-1d391kg .css-1d391kg {{
+            background-color: rgba(0, 0, 0, 0.7) !important;
+            border-radius: 10px;
+        }}
+        .sidebar .sidebar-content {{
+            background-color: rgba(0, 0, 0, 0.7) !important;
         }}
     </style>
     """,
