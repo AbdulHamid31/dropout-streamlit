@@ -25,61 +25,76 @@ def load_data():
 model = load_model()
 data = load_data()
 
-# ================================================
-# === CUSTOM BACKGROUND & STYLING (CSS) =========
-# ================================================
-st.markdown(
-    f"""
-    <style>
-        .stApp {{
-            background-image: url('https://raw.githubusercontent.com/AbdulHamid31/dropout-streamlit/main/univ%20amikom.png');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-        }}
-        .css-1d391kg .css-1cypcdb, .css-1d391kg .css-1d391kg {{
-            background-color: rgba(0, 0, 0, 0.7) !important;
-            border-radius: 10px;
-        }}
-        .sidebar .sidebar-content {{
-            background-color: rgba(0, 0, 0, 0.7) !important;
-        }}
-        .login-message {{
-            max-width: 350px;
-            background-color: rgba(0,0,0,0.6);
-            color: white;
-            padding: 20px;
-            border-radius: 12px;
-            text-align: center;
-            position: absolute;
-            botton: -90%;
-            right: -60%;
-        }}
+# ============================================
+# === SETUP LOGIN STATE =====================
+# ============================================
 
-        .css-1d391kg .css-1cypcdb, .css-1d391kg .css-1d391kg {{
-            background-color: rgba(0, 0, 0, 0.7) !important;
-            border-radius: 10px;
-        }}
-        .sidebar .sidebar-content {{
-            background-color: rgba(0, 0, 0, 0.7) !important;
-        }}
-    </style>
-    """,
-    unsafe_allow_html=True
-)
+if "logged_in" not in st.session_state:
+    st.session_state["logged_in"] = False
+
+# ================================================
+# === CONDITIONAL BACKGROUND & CSS ==============
+# ================================================
+
+if not st.session_state["logged_in"]:
+    # Ini hanya muncul di halaman login
+    st.markdown(
+        f"""
+        <style>
+            .stApp {{
+                background-image: url('https://raw.githubusercontent.com/AbdulHamid31/dropout-streamlit/main/univ%20amikom.png');
+                background-size: cover;
+                background-position: center;
+                background-attachment: fixed;
+            }}
+            .login-message {{
+                max-width: 400px;
+                background-color: rgba(0,0,0,0.6);
+                color: white;
+                padding: 20px;
+                border-radius: 12px;
+                text-align: center;
+                position: absolute;
+                top: 10%;
+                right: 5%;
+            }}
+            .css-1d391kg, .css-1cypcdb {{
+                background-color: rgba(0, 0, 0, 0.7) !important;
+                border-radius: 10px;
+            }}
+            .sidebar .sidebar-content {{
+                background-color: rgba(0, 0, 0, 0.7) !important;
+            }}
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
+else:
+    # Setelah login hilangkan background gambar
+    st.markdown(
+        """
+        <style>
+            .stApp {
+                background: none;
+            }
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
 
 # ===================
 # === LOGIN SYSTEM ==
 # ===================
 def login():
     st.sidebar.title("🔐 Login Mahasiswa")
-
-    # Tambah ucapan di sidebar
-    st.sidebar.markdown("""
-    <div style='text-align: center; color: white; font-size: 16px; padding: 10px;'>
-        Selamat Datang di Portal Mahasiswa Universitas XYZ
-    </div>
-    """, unsafe_allow_html=True)
+    st.sidebar.markdown(
+        """
+        <div style='text-align: center; color: white; font-size: 16px; padding: 10px;'>
+            Selamat Datang di Portal Mahasiswa Universitas XYZ
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
 
     nama_list = data["Nama"].unique()
     selected_nama = st.sidebar.selectbox("Pilih Nama Mahasiswa", nama_list)
@@ -98,20 +113,19 @@ def login():
         else:
             st.sidebar.error("❌ NIM tidak cocok dengan nama yang dipilih.")
 
-if "logged_in" not in st.session_state:
-    st.session_state["logged_in"] = False
-
 # ================================
-# ==== HALAMAN LOGIN (BELUM LOGIN)
+# ==== HALAMAN LOGIN (Belum Login)
 # ================================
 if not st.session_state["logged_in"]:
-    st.markdown("""
+    st.markdown(
+        """
         <div class='login-message'>
-            <h1>Selamat Datang di Portal Mahasiswa Universitas Amikom PJJ</h2>
-            <h4>Silakan login menggunakan nama dan NIM Anda untuk melanjutkan</p>
+            <h1>Selamat Datang di Portal Mahasiswa Universitas Amikom PJJ</h1>
+            <h4>Silakan login menggunakan nama dan NIM Anda untuk melanjutkan</h4>
         </div>
-    """, unsafe_allow_html=True)
-
+        """,
+        unsafe_allow_html=True
+    )
     login()
     st.stop()
 
