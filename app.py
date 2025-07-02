@@ -32,7 +32,7 @@ st.markdown(
     f"""
     <style>
         .stApp {{
-            background-image: url('https://raw.githubusercontent.com/AbdulHamid31/dropout-streamlit/main/1%20univ.jpg');
+            background-image: url('https://raw.githubusercontent.com/AbdulHamid31/dropout-streamlit/main/univ%20amikom.png');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -107,7 +107,7 @@ if "logged_in" not in st.session_state:
 if not st.session_state["logged_in"]:
     st.markdown("""
         <div class='login-message'>
-            <h1>Selamat Datang di Portal Mahasiswa Universitas XYZ</h2>
+            <h1>Selamat Datang di Portal Mahasiswa Universitas Amikom PJJ</h2>
             <h4>Silakan login menggunakan nama dan NIM Anda untuk melanjutkan</p>
         </div>
     """, unsafe_allow_html=True)
