@@ -107,8 +107,8 @@ if "logged_in" not in st.session_state:
 if not st.session_state["logged_in"]:
     st.markdown("""
         <div class='login-message'>
-            <h1>Selamat Datang di Portal Mahasiswa Universitas XYZ</h1>
-            <h4>Silakan login menggunakan nama dan NIM Anda untuk melanjutkan</h4>
+            <h1>Selamat Datang di Portal Mahasiswa Universitas XYZ</h2>
+            <h4>Silakan login menggunakan nama dan NIM Anda untuk melanjutkan</p>
         </div>
     """, unsafe_allow_html=True)
 
