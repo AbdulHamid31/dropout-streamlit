@@ -52,7 +52,7 @@ st.markdown(
             border-radius: 15px;
             text-align: center;
             position: absolute;
-            top: 20%;
+            top: 5%;
             right: 5%;
         }}
 
