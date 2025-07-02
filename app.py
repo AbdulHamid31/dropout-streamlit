@@ -45,11 +45,11 @@ st.markdown(
             background-color: rgba(0, 0, 0, 0.7) !important;
         }}
         .login-message {{
-            max-width: 400px;
+            max-width: 350px;
             background-color: rgba(0,0,0,0.6);
             color: white;
-            padding: 30px;
-            border-radius: 15px;
+            padding: 20px;
+            border-radius: 12px;
             text-align: center;
             position: absolute;
             top: 5%;
