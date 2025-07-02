@@ -52,8 +52,8 @@ st.markdown(
             border-radius: 12px;
             text-align: center;
             position: absolute;
-            botton: 5%;
-            right: 5%;
+            botton: 2%;
+            right: 2%;
         }}
 
         .css-1d391kg .css-1cypcdb, .css-1d391kg .css-1d391kg {{
