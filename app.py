@@ -3,15 +3,15 @@ import google.generativeai as genai
 import re
 
 # --- 1. KONFIGURASI KEAMANAN & API ---
-# Fungsi untuk inisialisasi API dengan pembersihan karakter spasi
 def init_api():
     if "GEMINI_API_KEY" in st.secrets:
-        # .strip() sangat penting untuk menghapus spasi/newline tak sengaja dari Secrets
+        # .strip() menghapus spasi atau karakter aneh yang tidak sengaja tersalin
         api_key = st.secrets["GEMINI_API_KEY"].strip()
         genai.configure(api_key=api_key)
         return True
     else:
         st.error("❌ GEMINI_API_KEY tidak ditemukan di Secrets Streamlit Cloud!")
+        st.info("💡 Pastikan Anda sudah memasukkan API Key di menu Settings > Secrets pada Dashboard Streamlit.")
         return False
 
 # --- 2. SYSTEM INSTRUCTION (LOGIKA GURU SOKRATIK) ---
@@ -33,7 +33,6 @@ ATURAN KETAT:
 # --- 3. UI & AESTHETIC CONFIG ---
 st.set_page_config(page_title="Kak Guru AI: Math Tutor", page_icon="📐", layout="wide")
 
-# CSS untuk mempercantik Chat dan Sidebar
 st.markdown("""
     <style>
     .stApp { background-color: #F8FAFC; }
@@ -48,11 +47,9 @@ with st.sidebar:
     st.title("🚀 Panel Belajar")
     st.markdown("Progres pengerjaan soal saat ini:")
     
-    # Inisialisasi history jika belum ada
     if "messages" not in st.session_state:
         st.session_state.messages = []
     
-    # Progress bar dinamis
     prog = min(len(st.session_state.messages) * 10, 100)
     st.progress(prog)
     st.write(f"Level Pemahaman: {prog}%")
@@ -73,53 +70,22 @@ with st.sidebar:
 st.title("🧑‍🏫 Kak Guru AI: Inovasi Matematika")
 st.caption("Khusus jenjang SD - SMP | Metode Sokratik")
 
-# Jalankan Inisialisasi API
 if init_api():
-    # Inisialisasi Model & Chat Session
+    # Perbaikan Nama Model agar tidak 404
     if "model" not in st.session_state:
         st.session_state.model = genai.GenerativeModel(
-            model_name="gemini-1.5-flash",
+            model_name="gemini-1.5-flash-latest", # Nama model yang lebih kompatibel
             system_instruction=SYSTEM_PROMPT
         )
     
     if "chat" not in st.session_state:
         st.session_state.chat = st.session_state.model.start_chat(history=[])
 
-    # Menampilkan Riwayat Chat
+    # Tampilkan History
     for message in st.session_state.messages:
         with st.chat_message(message["role"]):
             st.markdown(message["content"])
 
-    # Input dari Siswa
+    # Input Siswa
     if prompt := st.chat_input("Tulis soalmu di sini..."):
-        # Tampilkan chat user
-        st.session_state.messages.append({"role": "user", "content": prompt})
-        with st.chat_message("user"):
-            st.markdown(prompt)
-
-        # Respon AI
-        with st.chat_message("assistant"):
-            try:
-                # Mengirim pesan ke model
-                response = st.session_state.chat.send_message(prompt)
-                full_response = response.text
-                
-                st.markdown(full_response)
-                st.session_state.messages.append({"role": "assistant", "content": full_response})
-                
-                # FITUR VISUAL RUMUS: Ekstrak LaTeX $$...$$ untuk ditampilkan besar
-                latex_found = re.findall(r'\$\$(.*?)\$\$', full_response)
-                if latex_found:
-                    st.info("📌 **Rumus yang kita pakai:**")
-                    for formula in latex_found:
-                        st.latex(formula)
-                
-                # Efek Selebrasi (Gamification)
-                pujian = ["hebat", "pintar", "tepat", "selamat", "benar", "100", "jos"]
-                if any(word in full_response.lower() for word in pujian):
-                    st.balloons()
-                    
-            except Exception as e:
-                # Menangkap error 400 atau error API lainnya
-                st.error(f"❌ Terjadi gangguan teknis: {e}")
-                st.warning("Pastikan API Key di Secrets sudah benar dan tidak ada spasi.")
+        st
