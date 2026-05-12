@@ -5,17 +5,15 @@ import re
 # --- 1. KONFIGURASI HALAMAN ---
 st.set_page_config(page_title="Kak Guru AI", page_icon="📐", layout="centered")
 
-# --- 2. CSS CUSTOM (Aesthetic & Ramah Anak) ---
+# CSS untuk tampilan lebih bersih
 st.markdown("""
     <style>
-    .stApp { background-color: #F0F2F6; }
-    .stChatMessage { border-radius: 15px; border: 1px solid #E0E0E0; margin-bottom: 10px; }
-    .stButton>button { border-radius: 20px; background-color: #4F46E5; color: white; border: none; }
-    .stChatInputContainer { padding-bottom: 20px; }
+    .stApp { background-color: #F8FAFC; }
+    .stChatMessage { border-radius: 15px; margin-bottom: 10px; }
     </style>
     """, unsafe_allow_html=True)
 
-# --- 3. FUNGSI INISIALISASI API ---
+# --- 2. FUNGSI KONFIGURASI API ---
 def setup_gemini():
     if "GEMINI_API_KEY" in st.secrets:
         key = st.secrets["GEMINI_API_KEY"].strip()
@@ -23,88 +21,79 @@ def setup_gemini():
         return True
     return False
 
-# --- 4. SISTEM INSTRUCTION ---
+# --- 3. SYSTEM INSTRUCTION ---
 SYSTEM_PROMPT = (
-    "Kamu adalah 'Kak Guru AI', tutor matematika yang asyik untuk anak SD-SMP. "
-    "PRINSIP: Jangan pernah memberi jawaban akhir. Gunakan metode Sokratik. "
-    "Jika siswa bertanya soal, tanya balik: 'Apa yang kita ketahui dulu?' atau 'Menurutmu rumus apa yang pas?'. "
-    "Gunakan LaTeX $$ untuk rumus. Bahasa harus ceria, gunakan 'Kak Guru' dan 'Kamu'."
+    "Kamu adalah 'Kak Guru AI', tutor matematika SD-SMP yang ramah. "
+    "Tugasmu: Bantu siswa memahami konsep, JANGAN beri jawaban akhir. "
+    "Gunakan metode Sokratik (tanya balik untuk memancing logika). "
+    "Gunakan LaTeX $$ untuk rumus matematika agar rapi."
 )
 
-# --- 5. LOGIKA SESSION STATE ---
+# --- 4. LOGIKA SESSION STATE ---
 if "messages" not in st.session_state:
     st.session_state.messages = []
 
-# --- 6. SIDEBAR ---
+# --- 5. SIDEBAR ---
 with st.sidebar:
     st.title("🎒 Menu Belajar")
-    st.write("Progres kamu hari ini:")
-    prog = min(len(st.session_state.messages) * 10, 100)
-    st.progress(prog)
-    
-    st.divider()
-    if st.button("🗑️ Hapus Percakapan / Mulai Baru"):
+    if st.button("🗑️ Reset Percakapan"):
         st.session_state.messages = []
         if "chat_session" in st.session_state:
             del st.session_state.chat_session
         st.rerun()
 
-# --- 7. JALANKAN APLIKASI ---
+# --- 6. UTAMA ---
 st.title("🧑‍🏫 Kak Guru AI")
-st.markdown("---")
+st.caption("Tutor Matematika Interaktif")
 
 if not setup_gemini():
-    st.error("❌ API Key tidak ditemukan! Masukkan di Secrets Streamlit Cloud dengan nama: GEMINI_API_KEY")
+    st.error("❌ API Key belum terpasang di Secrets Streamlit!")
     st.stop()
 
-# Inisialisasi Model & Chat jika belum ada
+# Inisialisasi Chat Session dengan Nama Model yang Lebih Stabil
 if "chat_session" not in st.session_state:
+    # Kita coba gunakan 'gemini-1.5-flash', jika gagal sistem akan lari ke 'except'
     try:
         model = genai.GenerativeModel(
-            model_name="gemini-1.5-flash-latest",
+            model_name="gemini-1.5-flash", 
             system_instruction=SYSTEM_PROMPT
         )
         st.session_state.chat_session = model.start_chat(history=[])
     except Exception as e:
-        st.error(f"Gagal memulai AI: {e}")
+        st.error(f"Gagal memuat model: {e}")
         st.stop()
 
-# Tampilkan history chat
+# Tampilkan riwayat chat
 for message in st.session_state.messages:
     with st.chat_message(message["role"]):
         st.markdown(message["content"])
 
-# Input Chat
-if prompt := st.chat_input("Tanya soal matematika ke Kak Guru..."):
-    # Tampilkan input user
+# Input dari User
+if prompt := st.chat_input("Halo Kak Guru, mau tanya soal..."):
     st.session_state.messages.append({"role": "user", "content": prompt})
     with st.chat_message("user"):
         st.markdown(prompt)
 
-    # Respon AI
     with st.chat_message("assistant"):
         try:
-            # Kirim pesan ke API
+            # Mengirim pesan ke AI
             response = st.session_state.chat_session.send_message(prompt)
             full_text = response.text
             
             st.markdown(full_text)
             st.session_state.messages.append({"role": "assistant", "content": full_text})
             
-            # Efek balon jika AI memuji
-            if any(puji in full_text.lower() for puji in ["hebat", "pintar", "benar sekali", "bagus"]):
-                st.balloons()
-                
+            # Deteksi rumus LaTeX untuk ditampilkan lebih cantik
+            if "$$" in full_text:
+                formulas = re.findall(r'\$\$(.*?)\$\$', full_text)
+                for f in formulas:
+                    st.latex(f)
+
         except Exception as e:
-            err_msg = str(e)
-            if "API key not valid" in err_msg:
-                st.error("❌ API Key kamu salah atau tidak valid. Silakan ganti dengan yang baru di Secrets.")
-            elif "quota" in err_msg.lower():
-                st.error("❌ Kuota gratis harian kamu habis. Coba lagi besok ya!")
+            error_str = str(e)
+            if "404" in error_str:
+                st.error("⚠️ Model sedang tidak tersedia. Coba klik 'Reset Percakapan' di sidebar.")
+            elif "API key not valid" in error_str:
+                st.error("❌ API Key salah. Tolong buat Key baru di Google AI Studio dan update di Secrets.")
             else:
-                st.error(f"❌ Aduh, Kak Guru sedikit bingung. Error: {err_msg}")
-                # Tombol bantu reset jika error berkelanjutan
-                if st.button("Klik untuk Reset Sesi"):
-                    st.session_state.messages = []
-                    del st.session_state.chat_session
-                    st.rerun()
+                st.error(f"❌ Gangguan teknis: {error_str}")
