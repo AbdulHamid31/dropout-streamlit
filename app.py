@@ -1,217 +1,101 @@
 import streamlit as st
-import pandas as pd
-import shap
-import pickle
-import matplotlib.pyplot as plt
+import google.generativeai as genai
+import re
 
-# ============================
-# === LOAD MODEL & DATASET ===
-# ============================
+# --- 1. KONFIGURASI KEAMANAN (STREAMLIT SECRETS) ---
+# Di Streamlit Cloud, masukkan GEMINI_API_KEY di menu Settings > Secrets
+try:
+    API_KEY = st.secrets["GEMINI_API_KEY"]
+except:
+    API_KEY = "KOSONG" # Untuk running lokal jika belum ada secrets
 
-@st.cache_resource
-def load_model():
-    return pickle.load(open("model_xgb.pkl", "rb"))
+genai.configure(api_key=API_KEY)
 
-@st.cache_data
-def load_data():
-    df = pd.read_csv("dataset_mahasiswa_812.csv")
-    df['status_akademik_terakhir'] = df['status_akademik_terakhir'].map({
-        'IPK < 2.5': 0,
-        'IPK 2.5 - 3.0': 1,
-        'IPK > 3.0': 2
-    })
-    return df
+# --- 2. INSTRUKSI SISTEM (LOGIKA SOKRATIK) ---
+SYSTEM_PROMPT = """
+Anda adalah "Kak Guru AI", tutor matematika interaktif jenjang SD-SMP.
+PRINSIP UTAMA:
+1. JANGAN PERNAH memberikan jawaban akhir.
+2. JANGAN PERNAH menghitungkan untuk siswa.
+3. Gunakan Metode Sokratik: Berikan pertanyaan pemantik agar siswa berpikir.
+4. Gunakan LaTeX untuk rumus (Contoh: $$L = \\pi r^2$$).
+5. Bahasa: Ramah, sabar, dan gunakan analogi sederhana.
 
-model = load_model()
-data = load_data()
+ALUR:
+- Identifikasi Rumus -> Tanya Variabel (r, p, l, t) -> Minta input angka ke rumus -> Bimbing hitung parsial -> Selesai.
+"""
 
-# ============================================
-# === SETUP LOGIN STATE =====================
-# ============================================
+# --- 3. UI & AESTHETIC DESIGN ---
+st.set_page_config(page_title="Kak Guru AI", page_icon="📐", layout="wide")
 
-if "logged_in" not in st.session_state:
-    st.session_state["logged_in"] = False
+# CSS untuk mempercantik tampilan (Vibe Edukasi Modern)
+st.markdown("""
+    <style>
+    .main { background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); }
+    .stChatMessage { background-color: white; border-radius: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); padding: 15px; margin-bottom: 10px; }
+    .stButton>button { border-radius: 30px; background-color: #4F46E5; color: white; }
+    h1 { color: #1E293B; font-family: 'Poppins', sans-serif; }
+    </style>
+    """, unsafe_allow_html=True)
 
-# ================================================
-# === CONDITIONAL BACKGROUND & CSS ==============
-# ================================================
+# --- 4. SIDEBAR & PROGRESS ---
+with st.sidebar:
+    st.title("🚀 Panel Belajar")
+    if "messages" not in st.session_state:
+        st.session_state.messages = []
+    
+    # Hitung Progress sederhana
+    prog_value = min(len(st.session_state.messages) * 10, 100)
+    st.write(f"Progres Logika: {prog_value}%")
+    st.progress(prog_value)
+    
+    st.divider()
+    with st.expander("📝 Intip Rumus Penting"):
+        st.write("**Lingkaran:** $$L = \\pi r^2$$")
+        st.write("**Segitiga:** $$L = \\frac{1}{2} a t$$")
+        st.write("**Kubus (Vol):** $$V = s^3$$")
 
-if not st.session_state["logged_in"]:
-    # Ini hanya muncul di halaman login
-    st.markdown(
-        f"""
-        <style>
-            .stApp {{
-                background-image: url('https://raw.githubusercontent.com/AbdulHamid31/dropout-streamlit/main/univ%20amikom.png');
-                background-size: cover;
-                background-position: center;
-                background-attachment: fixed;
-            }}
-            .login-message {{
-                max-width: 400px;
-                background-color: rgba(0,0,0,0.6);
-                color: white;
-                padding: 20px;
-                border-radius: 12px;
-                text-align: center;
-                position: absolute;
-                top: 10%;
-                right: 5%;
-            }}
-            .css-1d391kg, .css-1cypcdb {{
-                background-color: rgba(0, 0, 0, 0.7) !important;
-                border-radius: 10px;
-            }}
-            .sidebar .sidebar-content {{
-                background-color: rgba(0, 0, 0, 0.7) !important;
-            }}
-        </style>
-        """,
-        unsafe_allow_html=True
+    if st.button("🗑️ Hapus Sesi & Mulai Baru"):
+        st.session_state.messages = []
+        st.rerun()
+
+# --- 5. LOGIKA CHAT AI ---
+st.title("🧑‍🏫 Kak Guru AI: Tutor Matematika")
+st.write("Halo! Masukkan soal matematika SD/SMP-mu, Kak Guru bantu pahami langkahnya ya!")
+
+# Inisialisasi model
+if "model" not in st.session_state:
+    st.session_state.model = genai.GenerativeModel(
+        model_name="gemini-1.5-flash",
+        system_instruction=SYSTEM_PROMPT
     )
+    st.session_state.chat = st.session_state.model.start_chat(history=[])
+
+# Menampilkan chat history
+for message in st.session_state.messages:
+    with st.chat_message(message["role"]):
+        st.markdown(message["content"])
+
+# Input siswa
+if API_KEY == "KOSONG":
+    st.warning("⚠️ API Key belum terdeteksi. Masukkan di Secrets Streamlit.")
 else:
-    # Setelah login hilangkan background gambar
-    st.markdown(
-        """
-        <style>
-            .stApp {
-                background: none;
-            }
-        </style>
-        """,
-        unsafe_allow_html=True
-    )
+    if prompt := st.chat_input("Tulis soalmu... (Contoh: Cari luas segitiga jika alas 10 dan tinggi 5)"):
+        st.session_state.messages.append({"role": "user", "content": prompt})
+        with st.chat_message("user"):
+            st.markdown(prompt)
 
-# ===================
-# === LOGIN SYSTEM ==
-# ===================
-def login():
-    st.sidebar.title("🔐 Login Mahasiswa")
-    st.sidebar.markdown(
-        """
-        <div style='text-align: center; color: white; font-size: 16px; padding: 10px;'>
-            Selamat Datang di Portal Mahasiswa Universitas XYZ
-        </div>
-        """,
-        unsafe_allow_html=True
-    )
-
-    nama_list = data["Nama"].unique()
-    selected_nama = st.sidebar.selectbox("Pilih Nama Mahasiswa", nama_list)
-    nim = st.sidebar.text_input("Masukkan NIM Mahasiswa", type="password")
-
-    if st.sidebar.button("Login"):
-        user_row = data[
-            (data["Nama"] == selected_nama) &
-            (data["ID Mahasiswa"].astype(str) == nim)
-        ]
-        if not user_row.empty:
-            st.session_state["logged_in"] = True
-            st.session_state["username"] = selected_nama
-            st.session_state["user_data"] = user_row
-            st.rerun()
-        else:
-            st.sidebar.error("❌ NIM tidak cocok dengan nama yang dipilih.")
-
-# ================================
-# ==== HALAMAN LOGIN (Belum Login)
-# ================================
-if not st.session_state["logged_in"]:
-    st.markdown(
-        """
-        <div class='login-message'>
-            <h1>Selamat Datang di Portal Mahasiswa Universitas Amikom PJJ</h1>
-            <h4>Silakan login menggunakan nama dan NIM Anda untuk melanjutkan</h4>
-        </div>
-        """,
-        unsafe_allow_html=True
-    )
-    login()
-    st.stop()
-
-# =====================
-# === SIDEBAR MENU ====
-# =====================
-st.sidebar.success(f"✅ Login sebagai {st.session_state['username']}")
-menu = st.sidebar.radio("📚 Menu Navigasi", ["Dashboard", "Prediksi Dropout & Visualisasi", "Logout"])
-
-# ====================
-# ==== DASHBOARD =====
-# ====================
-if menu == "Dashboard":
-    mahasiswa = st.session_state["user_data"].iloc[0]
-    nama = mahasiswa["Nama"]
-    total_login = int(mahasiswa.get("total_login", 0))
-    materi_selesai = int(mahasiswa.get("materi_selesai", 0))
-    kemajuan = int(mahasiswa.get("kemajuan_kelas", 0))
-
-    st.markdown(f"<h2>🎓 LMS Mahasiswa - {nama}</h2>", unsafe_allow_html=True)
-    st.markdown(f"<h4>👋 Selamat datang, {nama}!</h4>", unsafe_allow_html=True)
-    st.markdown("---")
-
-    col1, col2, col3 = st.columns(3)
-    with col1:
-        st.markdown("**Status Login**")
-        st.metric(label="", value="Aktif")
-
-    with col2:
-        st.markdown("**Total Login**")
-        st.metric(label="", value=f"{total_login}x")
-
-    with col3:
-        st.markdown("**Materi Selesai**")
-        st.metric(label="", value=f"{materi_selesai}")
-
-    progress = int(min(total_login, 50) / 50 * 100)
-    st.markdown("### 📈 Kemajuan Kelas (berdasarkan login)")
-    st.progress(progress)
-
-# ================================================
-# === PREDIKSI DROPOUT & VISUALISASI SHAP =======
-# ================================================
-elif menu == "Prediksi Dropout & Visualisasi":
-    st.title("🧠 Prediksi & Visualisasi Risiko Dropout")
-    st.subheader("🤖 Hasil Prediksi")
-    mahasiswa = st.session_state["user_data"]
-    nama = mahasiswa["Nama"].values[0]
-    st.write("**Nama Mahasiswa:**", nama)
-
-    X = mahasiswa.drop(columns=["ID Mahasiswa", "Nama", "dropout"])
-    prediksi = model.predict(X)[0]
-    proba = model.predict_proba(X)[0][1]
-
-    st.write("**Status Prediksi:**", "Dropout" if prediksi == 1 else "Tidak Dropout")
-    st.write("**Probabilitas Risiko Dropout:**", f"{proba:.2%}")
-
-    if proba < 0.2:
-        st.success("✅ Mahasiswa ini sangat kecil kemungkinannya untuk dropout.")
-    elif proba > 0.7:
-        st.error("⚠️ Mahasiswa ini berisiko tinggi dropout.")
-    else:
-        st.warning("⚠️ Mahasiswa ini memiliki kemungkinan dropout sedang.")
-
-    st.markdown("---")
-    st.subheader("📊 Visualisasi SHAP (Penjelasan Prediksi)")
-
-    explainer = shap.Explainer(model)
-    shap_values = explainer(X)
-    shap.plots.waterfall(shap_values[0])
-    st.pyplot(plt.gcf())
-
-    st.markdown("### ℹ️ Penjelasan Visualisasi SHAP")
-    st.markdown("""
-    Visualisasi di atas menunjukkan bagaimana masing-masing fitur mempengaruhi prediksi dropout mahasiswa:
-
-    - 🔵 Warna biru = fitur yang **mengurangi risiko dropout**.
-    - 🔴 Warna merah = fitur yang **meningkatkan risiko dropout**.
-    - Panjang batang = besarnya pengaruh fitur.
-
-    Nilai prediksi akhir (`f(x)`) digerakkan dari rata-rata prediksi (`E[f(x)]`) oleh kontribusi setiap fitur.
-    """)
-
-# ====================
-# ===== LOGOUT =======
-# ====================
-elif menu == "Logout":
-    st.session_state.clear()
-    st.rerun()
+        with st.chat_message("assistant"):
+            try:
+                response = st.session_state.chat.send_message(prompt)
+                st.markdown(response.text)
+                st.session_state.messages.append({"role": "assistant", "content": response.text})
+                
+                # Fitur Tambahan: Deteksi Otomatis Rumus untuk ditampilkan besar
+                latex_match = re.findall(r'\$\$(.*?)\$\$', response.text)
+                if latex_match:
+                    st.info("💡 **Rumus Terdeteksi:**")
+                    for f in latex_match:
+                        st.latex(f)
+            except Exception as e:
+                st.error(f"Terjadi kesalahan: {e}")
